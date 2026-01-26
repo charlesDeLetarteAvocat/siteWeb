@@ -12,7 +12,7 @@
     left: 0 ;
     right: 0 ;
     width: 101% ;
-    height: 15% ;
+    height: 15dvh ;
     background-color: #262422 ;
     z-index: 1000 ;
     display: block ;
@@ -97,8 +97,9 @@
 }
 @layer section1 {
   .section1 {
-    height: 45dvh ;
-    width: 100% ;
+    height: auto ;
+    padding-top: 15dvh;
+    width: 100%;
     justify-content: center ;
     align-items: top ;
     display: flex ;
@@ -132,7 +133,7 @@
 }
 @layer section2 {
   .section2 {
-    height: 60dvh ;
+    height: auto ;
     width: 100% ;
     text-align: center ;
     background-color: #eceae6;
@@ -144,7 +145,8 @@
   }
   .section2 .encadre {
     position: relative ;
-    height: 80% ;
+    margin: 5%;
+    height: auto ;
     width: 32% ;
     bottom: 0  ;
     border: #E3BA8A solid ;
@@ -186,7 +188,7 @@
 @layer section4 {
   .section4 {
     position: relative;
-    height: 150dvh ;
+    height: auto ;
     width: 100% ;
     text-align: left ;
     justify-content: center ;
@@ -257,17 +259,15 @@
   }
   .section5ContenantPhoto1 {
     height: 100% ;
-    width: 25%;
+    width: 35%;
     margin: 5%;
     overflow: hidden ;
-    background-color: aqua;
   }
   .section5ContenantPhoto2 {
     height: 100% ;
-    width: 25% ;
+    width: 35% ;
     margin: 5%;
     overflow: hidden;
-    background-color: aqua;
   }
   .section5 img {
     height: 100% ;
@@ -290,17 +290,19 @@
   .section7 {
     position: relative;
     height: 60dvh ;
-    width: 100% ;
+    width: 100dvh ;
     text-align: center ;
     justify-content: center ;
     align-items: center ;
+    justify-items: center;
+    align-self: center;
     display: flex ;
   }
   .section7 .tableau {
     border: 1px solid #000 ;
     border-collapse: collapse ;
     height: 80% ;
-    width: 50% ;
+    width: 50dvh ;
     display: table ;
   }
   .section7 .colone {
@@ -342,11 +344,12 @@
 
 @layer overdriveStyles { 
   
-@media (max-aspect-ratio: 15/16) {
+@media (max-aspect-ratio: 1) {
     
    .section1 {
-    height: 45dvh ;
-    width: 100% ;
+    height: auto ;
+    padding-top: 15dvh;
+    width: 100dvh ;
     justify-content: center ;
     align-items: top ;
     display: flex ;
@@ -377,13 +380,25 @@
     text-align: left ;
     font-size: 375% ;
   }
-
+@layer section2 {
+  .section2 {
+    height: auto ;
+    width: 100dvh ;
+    text-align: center ;
+    background-color: #eceae6;
+    justify-content: center ;
+    align-items: center ;
+    display: flex ;
+    line-height: 150% ;
+    scroll-margin-top: 22vh
+  }
+}
 
   @layer section4 {
   .section4 {
     position: relative;
-    height: 1800px ;
-    width: 100% ;
+    height: auto ;
+    width: 100dvh ;
     text-align: left ;
     justify-content: center ;
     align-items: center ;
@@ -399,7 +414,7 @@
     position: relative;
     width: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between
   }
   .section4 .liste {
     text-align: justify;
@@ -420,8 +435,9 @@
 }
   .section5 {
     position: relative;
-    height: 140dvh ;
-    width: 100% ;
+    height: auto ;
+    padding-top: 5dvh ;
+    width: 100dvh ;
     text-align: center ;
     justify-content: space-evenly ;
     justify-items: center ;
@@ -451,21 +467,48 @@
     width: 48%;
   }
   .section5ContenantPhoto1 {
-    height: auto ;
-    width: 50% ;
-    overflow: hidden ;
-    background-color: aqua;
+    width: 50% !important;
+    aspect-ratio: 3/4 !important;
   }
   .section5ContenantPhoto2 {
-    height: auto ;
-    width: 50% ;
-    overflow: hidden;
-    background-color: aqua;
+    width: 50% !important;
+    aspect-ratio: 3/4 !important;
   }
   .section5 img {
-    height: 100% ;
-    width: 100% ;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
+  }
+
+  .section7 {
+    position: relative;
+    height: auto ;
+    width: 100dvh ;
+    text-align: center ;
+    justify-content: center ;
+    align-items: center ;
+    align-content: center;
+    justify-items: center;
+    display: flex ;
+  }
+
+  .section7 .contenue {
+    position: relative;
+    height: auto ;
+    width: 100% ;
+    text-align: center ;
+    justify-content: center ;
+    align-items: center ;
+    display: flex ;
+  }
+
+  .section7 .tableau {
+    border: 1px solid #000 ;
+    border-collapse: collapse ;
+    height: auto ;
+    width: 80% ;
+    display: table ;
   }
 
 }
@@ -612,7 +655,7 @@
     ÉQUIPE
   </div>
   <div class = contenue>
-    <div class="section5ContenantPhoto1"><img src="images/photoMarcAndre.jpg" alt="photoMarcAndre" name="photoMarcAndre.jpg" style="object-fit: cover; max-width: 100%; height: 100%; width: 100%;" /></div>
+    <div class="section5ContenantPhoto1"><img src="images/photoMarcAndre.jpg" alt="photoMarcAndre" name="photoMarcAndre.jpg" /></div>
     <div class="section1Text1">
       <p style="font-size: 150%; font-family: Arial, Helvetica, sans-serif;">MARC-ANDRÉ LETARTE</p>
       <p style="text-align: center;">
@@ -639,7 +682,7 @@
         votre cause ne laissera aucun doute.
       </p>
     </div>
-  <div class="section5ContenantPhoto2"><img src="images/photoSuzie.jpg" alt="photoSuzie" name="photoSuzie.jpg" style="object-fit: cover; max-width: 100%; height: 100%; width: 100%;" /></div>
+  <div class="section5ContenantPhoto2"><img src="images/photoSuzie.jpg" alt="photoSuzie" name="photoSuzie.jpg"/></div>
   </div>
 </div>
 
@@ -655,8 +698,8 @@
     <div class="colone" style="display: table-cell; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); border-image-source: initial; border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; padding-top: 5%; padding-right: 5%; padding-bottom: 5%; padding-left: 5%;">
       <div class = titreColonne> <p>CONTACT</p> </div> 
       <div class = contenuColonne>
-        <p>Email : <a href= "mailto: contact@monsite.com"> contact@monsite.com</a> <br />
-        Téléphone : <a href="tel:+14185551234"> 14185551234 </a> <br />
+        <p>Email : <a href= "mailto: info@letarteavocat.com"> info@letarteavocat.com</a> <br />
+        Téléphone : <a href="tel:819 992-2407"> (819) 992-2407 </a> <br />
         Fax: (819) 371-2417</p>
       </div>
     </div>
