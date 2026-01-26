@@ -1,83 +1,86 @@
 <!DOCTYPE html> 
 <html lang="fr">
     <head> 
+        <meta charset="UTF-8"> 
+        <title>Letarte Avocat</title>
         <style>
+
 @layer navigationBar {
   .navbar {
     position: fixed;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    width: 101% !important;
-    height: 15% !important;
-    background-color: #262422 !important;
-    z-index: 1000 !important;
-    display: block !important;
+    top: 0 ;
+    left: 0 ;
+    right: 0 ;
+    width: 101% ;
+    height: 15% ;
+    background-color: #262422 ;
+    z-index: 1000 ;
+    display: block ;
     align-items: center;
     font-family: "Proxima Nova";
   }
   .navbar a:hover,
   .navbar a:focus {
-    color: #E3BA8A !important;
-    background: none !important;
+    color: #E3BA8A ;
+    background: none ;
   }
   .navbar-table {
-    position: relative !important;
-    display: flex !important;
-    justify-content: center !important;
-    background-color: #262422 !important;
-    position: absolute !important;
-    right: 20% !important;
-    top: 50% !important;
-    width: 45% !important;
-    height: 30% !important;
+    position: relative ;
+    display: flex ;
+    justify-content: center ;
+    background-color: #262422 ;
+    position: absolute ;
+    right: 20% ;
+    top: 50% ;
+    width: 45% ;
+    height: 30% ;
   }
   .navbar-cell {
-    display: flex !important;
-    border: 0.1em solid #ffffff !important;
-    background-color: #262422 !important;
-    width: 33.33% !important;
-    height: 100% !important;
-    justify-content: center !important;
-    text-align: center !important;
-    align-items: center !important;
+    display: flex ;
+    border: 0.1em solid #ffffff ;
+    background-color: #262422 ;
+    width: 33.33% ;
+    height: 100% ;
+    justify-content: center ;
+    text-align: center ;
+    align-items: center ;
   }
   .navbar-cell a {
-    text-decoration: none !important;
-    color: white !important;
-    justify-content: center !important;
-    text-align: center !important;
+    text-decoration: none ;
+    color: white ;
+    justify-content: center ;
+    text-align: center ;
   }
   .navbar-brand {
-    justify-content: center !important;
-    align-items: center !important;
-    position: absolute !important;
-    display: flex !important;
-    height: 80% !important;
-    width: auto !important;
-    top: 15% !important;
-    right: 70% !important;
+    justify-content: center ;
+    align-items: center ;
+    position: absolute ;
+    display: flex ;
+    height: 80% ;
+    width: auto ;
+    top: 15% ;
+    right: 70% ;
   }
   .navbar-brand img {
-    height: 100% !important;
-    width: 100% !important;
-    object-fit: contain !important;
+    height: 100% ;
+    width: 100% ;
+    object-fit: contain ;
   }
 }
 @layer general {
   html {
     scroll-behavior: smooth;
-    height: 100% !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    height: 100% ;
+    width: 100% ;
+    margin: 0 ;
+    padding: 0 ;
   }
   body {
-    height: 100% !important;
-    width: 100% !important;
-    margin: 0 !important;
-    margin-top: 7% !important;
-    padding: 0 !important;
+    height: 100% ;
+    width: 100% ;
+    margin: 0 ;
+    margin-top: 7% ;
+    padding: 0 ;
   }
   .parallax {
     height: 100vh;
@@ -94,60 +97,62 @@
 }
 @layer section1 {
   .section1 {
-    height: 60% !important;
-    width: 100% !important;
-    justify-content: center !important;
-    align-items: top !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    background-size: cover !important;
-    background-position: center center !important;
-    background-image: linear-gradient(0deg, rgba(219, 218, 217, 0.5)), url("images/background1.jpg") !important;
+    height: 45dvh ;
+    width: 100% ;
+    justify-content: center ;
+    align-items: top ;
+    display: flex ;
+    flex-wrap: wrap ;
+    background-size: cover ;
+    background-position: center center ;
+    background-image: linear-gradient(0deg, rgba(219, 218, 217, 0.5)), url("images/background1.jpg") ;
   }
   .section1 .texte {
-    position: relative !important;
-    height: 25% !important;
-    width: 45% !important;
-    top: 30% !important;
-    text-align: center !important;
-    color: #262422 !important;
+    position: relative ;
+    height: 25% ;
+    width: 45% ;
+    top: 30% ;
+    text-align: center ;
+    color: #262422 ;
   }
   .section1 .titre {
-    text-align: left !important;
-    font-size: 120% !important;
-    font-family: Arial, Helvetica, sans-serif !important;
-    font-weight: bold !important;
-    letter-spacing: 0.2em !important;
-    margin-bottom: 5% !important;
-    color: #262422 !important;
+    text-align: left ;
+    font-size: 120% ;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-weight: bold ;
+    letter-spacing: 0.2em ;
+    margin-bottom: 5% ;
+    color: #262422 ;
   }
   .section1 .devise {
-    margin-top: 0 !important;
-    text-align: left !important;
-    font-size: 375% !important;
+    margin-top: 0 ;
+    text-align: left ;
+    font-size: 375% ;
   }
 }
 @layer section2 {
   .section2 {
-    height: 65% !important;
-    width: 100% !important;
-    text-align: center !important;
-    justify-content: center !important;
-    align-items: center !important;
-    display: flex !important;
-    line-height: 150% !important;
+    height: 60dvh ;
+    width: 100% ;
+    text-align: center ;
+    background-color: #eceae6;
+    justify-content: center ;
+    align-items: center ;
+    display: flex ;
+    line-height: 150% ;
+    scroll-margin-top: 22vh
   }
   .section2 .encadre {
-    position: relative !important;
-    height: 90% !important;
-    width: 32% !important;
-    bottom: 18% !important;
-    border: #E3BA8A solid !important;
-    text-align: justify !important;
-    padding-left: 8% !important;
-    padding-right: 8% !important;
-    display: flex !important;
-    flex-direction: column !important;
+    position: relative ;
+    height: 80% ;
+    width: 32% ;
+    bottom: 0  ;
+    border: #E3BA8A solid ;
+    text-align: justify ;
+    padding-left: 8% ;
+    padding-right: 8% ;
+    display: flex ;
+    flex-direction: column ;
   }
   .section2 .espaceur {
     height: 30%;
@@ -156,7 +161,7 @@
 @layer section3 {
   .section3 {
     position: relative;
-    height: 60%;
+    height: 50dvh;
     width: 100%;
     text-align: center;
     justify-content: center;
@@ -165,29 +170,29 @@
     display: flex;
   }
   .section3 .parallax {
-    width: 100% !important;
+    width: 100% ;
   }
   .section3ContainerImage {
-    height: 100% !important;
-    width: 100% !important;
+    height: 100% ;
+    width: 100% ;
     overflow: hidden;
     display: flex;
   }
   .section3 img {
-    width: 100% !important;
-    height: auto !important;
+    width: 100% ;
+    height: auto ;
   }
 }
 @layer section4 {
   .section4 {
     position: relative;
-    height: 150% !important;
-    width: 100% !important;
-    text-align: left !important;
-    justify-content: center !important;
-    align-items: center !important;
-    display: flex !important;
-    flex-direction: column !important;
+    height: 150dvh ;
+    width: 100% ;
+    text-align: left ;
+    justify-content: center ;
+    align-items: center ;
+    display: flex ;
+    flex-direction: column ;
   }
   .section4 .titre {
     position: relative;
@@ -220,89 +225,92 @@
 @layer section5 {
   .section5 {
     position: relative;
-    height: 80% !important;
-    width: 100% !important;
-    text-align: center !important;
-    justify-content: space-evenly !important;
-    justify-items: center !important;
-    align-items: center !important;
-    align-content: center !important;
-    background-color: #262422 !important;
-    color: #ffffff !important;
-    display: flex !important;
-    scroll-margin-top: 11vh;
+    height: 80dvh;
+    width: 100% ;
+    text-align: center ;
+    justify-content: space-evenly ;
+    justify-items: center ;
+    align-items: center ;
+    align-content: center ;
+    background-color: #262422;
+    color: #ffffff ;
+    display: flex ;
+    scroll-margin-top: 18vh;
     flex-direction: column;
   }
   .section5 .contenue {
     position: relative;
-    height: 80% !important;
-    width: 100% !important;
-    text-align: center !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    justify-items: center !important;
-    align-content: center !important;
-    background-color: #262422 !important;
-    color: #ffffff !important;
-    display: flex !important;
+    height: 80% ;
+    width: 100% ;
+    text-align: center ;
+    justify-content: space-between ;
+    align-items: center ;
+    justify-items: center ;
+    align-content: center ;
+    background-color: #262422;
+    color: #ffffff ;
+    display: flex ;
   }
   .section5 .titre {
-    width: 48%;
+    width: 80%;
+    text-align: center;
   }
   .section5ContenantPhoto1 {
-    height: 100% !important;
-    width: 25% !important;
-    overflow: hidden !important;
+    height: 100% ;
+    width: 25%;
+    margin: 5%;
+    overflow: hidden ;
     background-color: aqua;
   }
   .section5ContenantPhoto2 {
-    height: 100% !important;
-    width: 25% !important;
+    height: 100% ;
+    width: 25% ;
+    margin: 5%;
     overflow: hidden;
     background-color: aqua;
   }
   .section5 img {
-    height: 100% !important;
-    width: 100% !important;
+    height: 100% ;
+    width: 100% ;
     object-fit: cover;
   }
 }
 @layer section6 {
   .section6 {
     position: relative;
-    height: 20% !important;
-    width: 60% !important;
-    text-align: left !important;
-    justify-content: center !important;
-    align-items: center !important;
-    display: flex !important;
+    height: 60dvh ;
+    width: 60% ;
+    text-align: left ;
+    justify-content: center ;
+    align-items: center ;
+    display: flex ;
   }
 }
 @layer section7 {
   .section7 {
     position: relative;
-    height: 40% !important;
-    width: 100% !important;
-    text-align: center !important;
-    justify-content: center !important;
-    align-items: center !important;
-    display: flex !important;
+    height: 60dvh ;
+    width: 100% ;
+    text-align: center ;
+    justify-content: center ;
+    align-items: center ;
+    display: flex ;
   }
   .section7 .tableau {
-    border: 1px solid #000 !important;
-    border-collapse: collapse !important;
-    height: 80% !important;
-    width: 50% !important;
-    display: table !important;
+    border: 1px solid #000 ;
+    border-collapse: collapse ;
+    height: 80% ;
+    width: 50% ;
+    display: table ;
   }
   .section7 .colone {
-    display: table-cell !important;
-    border: 1px solid #000 !important;
-    padding: 5% !important;
-    justify-content: space-between !important;
-    align-content: space-between !important;
-    justify-items: space-between !important;
-    align-items: space-between !important;
+    display: table-cell ;
+    border: 1px solid #000 ;
+    padding: 5% ;
+    justify-content: space-between ;
+    align-content: space-between ;
+    justify-items: space-between ;
+    align-items: space-between ;
     width: 33.33%;
   }
   .section7 .colone .contenuColonne {
@@ -331,6 +339,137 @@
     color: #272624;
     font-weight: lighter;
   }
+
+@layer overdriveStyles { 
+  
+@media (max-aspect-ratio: 15/16) {
+    
+   .section1 {
+    height: 45dvh ;
+    width: 100% ;
+    justify-content: center ;
+    align-items: top ;
+    display: flex ;
+    flex-wrap: wrap ;
+    background-size: cover ;
+    background-position: center center ;
+    background-image: linear-gradient(0deg, rgba(219, 218, 217, 0.5)), url("images/background1.jpg") ;
+  }
+  .section1 .texte {
+    position: relative ;
+    height: 25% ;
+    width: 45% ;
+    top: 49% ;
+    text-align: center ;
+    color: #262422 ;
+  }
+  .section1 .titre {
+    text-align: left ;
+    font-size: 120% ;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-weight: bold ;
+    letter-spacing: 0.2em ;
+    margin-bottom: 5% ;
+    color: #262422 ;
+  }
+  .section1 .devise {
+    margin-top: 0 ;
+    text-align: left ;
+    font-size: 375% ;
+  }
+
+
+  @layer section4 {
+  .section4 {
+    position: relative;
+    height: 1800px ;
+    width: 100% ;
+    text-align: left ;
+    justify-content: center ;
+    align-items: center ;
+    display: flex ;
+    flex-direction: column ;
+  }
+  .section4 .titre {
+    position: relative;
+    width: 50%;
+    display: flex;
+  }
+  .section4 .contenue {
+    position: relative;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section4 .liste {
+    text-align: justify;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 10%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    line-height: 150%;
+  }
+  .section4 .liste li {
+    margin-bottom: 4%;
+  }
+  .section4 .liste li ul li {
+    margin-bottom: 2%;
+  }
+}
+  .section5 {
+    position: relative;
+    height: 140dvh ;
+    width: 100% ;
+    text-align: center ;
+    justify-content: space-evenly ;
+    justify-items: center ;
+    align-items: center ;
+    align-content: center ;
+    background-color: #262422 ;
+    color: #ffffff ;
+    display: flex ;
+    scroll-margin-top: 18vh;
+    flex-direction: column;
+  }
+  .section5 .contenue {
+    position: relative;
+    height: 80% ;
+    width: 100% ;
+    text-align: center ;
+    justify-content: space-between ;
+    align-items: center ;
+    justify-items: center ;
+    align-content: center ;
+    background-color: #262422 ;
+    color: #ffffff ;
+    display: flex ;
+    flex-direction: column;
+  }
+  .section5 .titre {
+    width: 48%;
+  }
+  .section5ContenantPhoto1 {
+    height: auto ;
+    width: 50% ;
+    overflow: hidden ;
+    background-color: aqua;
+  }
+  .section5ContenantPhoto2 {
+    height: auto ;
+    width: 50% ;
+    overflow: hidden;
+    background-color: aqua;
+  }
+  .section5 img {
+    height: 100% ;
+    width: 100% ;
+    object-fit: cover;
+  }
+
+}
+}
 }
 /* commentaire */
 
@@ -339,7 +478,7 @@
     </head>
 
     <body> 
-        <div class="navbar" style="background-color: #00e1ff;" role="banner">
+        <div class="navbar" style="background-color: #262422;" role="banner">
 
 
 
@@ -380,12 +519,13 @@
     </p>
   </div>
 </div>
+
 <!--ImageParralaxe-->
-<div class="section3">
+<!--<div class="section3">
   <div class="parallax">
     <div class="section3ContainerImage" style="overflow-x: hidden; overflow-y: hidden; display: flex; flex-wrap: wrap; height: 100%; width: 100%;"><img src="images/background2.jpg" alt="background2" name="background2.jpg" style="position: relative; height: 100%; width: 100%; top: 10px;" /></div>
   </div>
-</div>
+</div>-->
 
 <!--Services-->
 <div class="section4" >
@@ -467,12 +607,12 @@
 </div>
 
 <!--Equipe-->
-<div class="section5" id = "section2" style="height: 50%; text-align: center; justify-content: space-between; align-items: center; background-color: rgb(39, 38, 36); color: rgb(255, 255, 255); display: flex;">
+<div class="section5" id = "section2">
   <div class = titre>
     ÉQUIPE
   </div>
   <div class = contenue>
-    <div class="section5ContenantPhoto1" style="background-color: aqua; height: 100%; width: 25%; overflow-x: hidden; overflow-y: hidden;"><img src="images/photoMarcAndre.jpg" alt="photoMarcAndre" name="photoMarcAndre.jpg" style="object-fit: cover; max-width: 100%; height: 100%; width: 100%;" /></div>
+    <div class="section5ContenantPhoto1"><img src="images/photoMarcAndre.jpg" alt="photoMarcAndre" name="photoMarcAndre.jpg" style="object-fit: cover; max-width: 100%; height: 100%; width: 100%;" /></div>
     <div class="section1Text1">
       <p style="font-size: 150%; font-family: Arial, Helvetica, sans-serif;">MARC-ANDRÉ LETARTE</p>
       <p style="text-align: center;">
@@ -499,7 +639,7 @@
         votre cause ne laissera aucun doute.
       </p>
     </div>
-  <div class="section5ContenantPhoto2" style="overflow-x: hidden; overflow-y: hidden; background-color: aqua; height: 100%; width: auto;"><img src="images/photoSuzie.jpg" alt="photoSuzie" name="photoSuzie.jpg" style="object-fit: cover; max-width: 100%; height: 100%; width: 100%;" /></div>
+  <div class="section5ContenantPhoto2"><img src="images/photoSuzie.jpg" alt="photoSuzie" name="photoSuzie.jpg" style="object-fit: cover; max-width: 100%; height: 100%; width: 100%;" /></div>
   </div>
 </div>
 
