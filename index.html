@@ -145,10 +145,9 @@
   }
   .section2 .encadre {
     position: relative ;
-    margin: 5%;
+    margin: 2%;
     height: auto ;
-    width: 32% ;
-    bottom: 0  ;
+    width: 50% ;
     border: #E3BA8A solid ;
     text-align: justify ;
     padding-left: 8% ;
@@ -156,9 +155,12 @@
     display: flex ;
     flex-direction: column ;
   }
-  .section2 .espaceur {
-    height: 30%;
+
+  .section2 .titre {
+    
+    position: relative ;
   }
+
 }
 @layer section3 {
   .section3 {
@@ -274,6 +276,33 @@
     width: 100% ;
     object-fit: cover;
   }
+
+  .section5 .section1Text1 {
+    height: auto;
+    width: 25% !important;
+    margin-top: 5% ;
+    margin-bottom: 5% ;
+    margin-right: 2.5%;
+    
+  }
+
+  .section5 .section1Text2 {
+    height: auto;
+    width: 25% !important;
+    margin-top: 5% ;
+    margin-bottom: 5% ;
+    margin-left: 2.5%;
+    
+  }
+  .section5 .titreTexte {
+    height: 2.5dvh;
+  }
+
+  .section5 .corpsTexte {
+    text-align: center ;
+    height: 2.5dvh;
+  }
+
 }
 @layer section6 {
   .section6 {
@@ -287,6 +316,7 @@
     margin-top: 5%;
     margin-bottom: 5%;
   }
+
 }
 
 
@@ -301,7 +331,7 @@
 
   .section7 .container {
     position: relative;
-    height: 50dvh ;
+    height: 30dvh ;
     width: 100% ;
     text-align: center ;
     justify-content: center ;
@@ -313,18 +343,20 @@
   }
   .section7 .tableau {
     position: relative;
-    border: 1px solid #000 ;
-    border-collapse: collapse ;
-    height: 100% ;
-    width: 80% ;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    height: 100%;
+    width: 80%;
     display: table;
-    left:0 ;
+    left: 0;
   }
   
   .section7 .colone {
     display: table-cell ;
     border: 1px solid #000 ;
-    padding: 5% ;
+    padding: 2% ;
+    padding-left: 5%;
+    padding-right: 5%;
     width: 33.33%;
   }
   .section7 .colone .contenuColonne {
@@ -495,6 +527,22 @@
     object-position: center;
   }
 
+  .section5 .section1Text1 {
+    height: auto;
+    width: 10dvw !important;
+    margin-top: 5% ;
+    margin-bottom: 5% ;
+    margin-right: 0;
+  }
+
+  .section5 .section1Text2 {
+    height: auto;
+    width: 10dvw !important;
+    margin-top: 5% ;
+    margin-bottom: 5% ;
+    margin-left: 0;
+  }
+
   @layer section7 {
   .section7 {
     position: relative;
@@ -600,9 +648,9 @@
   <div class = "encadre">
     <div class = "espaceur"></div>
     <div class = titre>
-      <p>À PROPOS<br /><br />
+    </br>  À PROPOS </br> </br>
     </div>
-    </p>
+    
     <p>
       Situé à Trois-Rivières, <span style="color:#272624 ; font-family:Arial, Helvetica, sans-serif; font-weight: bold;">LETARTE</span> <span style="font-weight:bold; color:#E3BA8A  ; font-family:Arial, Helvetica, sans-serif;">AVOCAT</span> offre des services exclusivement liés au droit familial. Détenant une solide expérience en litige et plaidoirie, chaque dossier est abordé avec une approche personnalisée et gagnante.<br /><br />
       Depuis 2006, notre mission et notre engagement sont clairs: vous offrir rigueur et efficacité tout au long du cheminement de votre cause. Avec plus d'un millier de clients représentés à ce jour à travers la province, nous sommes la référence en Mauricie.<br /><br />
@@ -628,7 +676,7 @@
     <p>DROIT FAMILIAL</p>
     </div>
     <div class="liste">
-      <p>Représentation à la Cour supérieure lors de séparation et divorce; Obtention d'un jugement à la suite d'un procès, d'une négociation ou d'un règlement à l'amiable concernant:</p>
+      <p>Représentation à la Cour supérieure lors de séparation et divorce; </br> Obtention d'un jugement à la suite d'un procès, d'une négociation ou d'un règlement à l'amiable concernant:</p>
       <ul>
         <li>
           La garde d'enfant et le partage du temps parental
@@ -705,28 +753,28 @@
   <div class = contenue>
     <div class="section5ContenantPhoto1"><img src="images/photoMarcAndre.jpg" alt="photoMarcAndre" name="photoMarcAndre.jpg" /></div>
     <div class="section1Text1">
-      <p style="font-size: 150%; font-family: Arial, Helvetica, sans-serif;">MARC-ANDRÉ LETARTE</p>
-      <p style="text-align: center;">
-        Membre du barreau du Québec <br />
-        depuis 2006, Me Letarte plaide <br />
-        régulièrement à la Cour supérieure <br />
-        et Cour du Québec. Il s'assure que <br />
-        chaque client comprenne les enjeux <br />
-        et implications de sa situation <br />
-        juridique afin de maximiser leurs <br />
+      <p class="titreTexte" style="font-size: 150%; font-family: Arial, Helvetica, sans-serif; text-align: center;">MARC-ANDRÉ LETARTE</p>
+      <p class="corpsTexte" style="text-align: center;">
+        Membre du barreau du Québec 
+        depuis 2006, Me Letarte plaide 
+        régulièrement à la Cour supérieure 
+        et Cour du Québec. Il s'assure que 
+        chaque client comprenne les enjeux 
+        et implications de sa situation 
+        juridique afin de maximiser leurs 
         gains.
       </p>
     </div>
     <div class="section1Text2">
-      <p style="font-size: 150%; font-family: Arial, Helvetica, sans-serif;">SUZIE LEAHEY</p>
-      <p style="text-align: center;">
-        Avec plus de 15 ans d'expérience <br />
-        dans le domaine juridique, Mme <br />
-        Leahey détient une solide <br />
-        connaissance en matière familiale et <br />
-        civile. Maîtrisant les subtilités de la <br />
-        procédure juridique, son soutien et <br />
-        son dévouement à la réussite de <br />
+      <p class="titreTexte" style="font-size: 150%; font-family: Arial, Helvetica, sans-serif; text-align: center;">SUZIE LEAHEY</p>
+      <p class="corpsTexte" style="text-align: center;">
+        Avec plus de 15 ans d'expérience
+        dans le domaine juridique, Mme
+        Leahey détient une solide
+        connaissance en matière familiale et
+        civile. Maîtrisant les subtilités de la
+        procédure juridique, son soutien et
+        son dévouement à la réussite de
         votre cause ne laissera aucun doute.
       </p>
     </div>
@@ -749,7 +797,6 @@
         <div class = contenuColonne>
           <p>Email : <a href= "mailto: ma@letarteavocat.com"> ma@letarteavocat.com</a> <br />
           Téléphone : <a href="tel:819-992-2407"> (819) 992-2407 </a> <br />
-          Fax: (819) 371-2417</p>
         </div>
       </div>
 
