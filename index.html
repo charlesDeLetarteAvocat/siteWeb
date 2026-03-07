@@ -319,8 +319,6 @@
 
 }
 
-
-
 @layer section7 {
   .section7 {
     position: relative;
@@ -393,15 +391,13 @@
 @media (max-aspect-ratio: 1) {
 
     .titre {
-        text-align: center !important;
-        align-self: center !important;
-        color: #E3BA8A;
+
         font-family: Arial, Helvetica, sans-serif;
         font-size: 120%;
         letter-spacing: 0.2em;
       }
 
-
+  @layer section1 {
    .section1 {
     height: auto ;
     padding-top: 15dvh;
@@ -436,7 +432,9 @@
     text-align: left ;
     font-size: 375% ;
   }
-@layer section2 {
+}
+
+  @layer section2 {
   .section2 {
     height: auto ;
     width: 100dvh ;
@@ -506,6 +504,8 @@
     margin-bottom: 2%;
   }
 }
+
+  @layer section5 {
   .section5 {
     position: relative;
     height: auto ;
@@ -569,26 +569,27 @@
     margin-bottom: 5% ;
     margin-left: 0;
   }
+}
+
+  @layer section6 {
 
   .section6 {
     justify-content: center;
-    justify-items: center;
+    align-content: center;
     text-align: center;
     position: relative;
-    width: 100dvw !important;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    align-items: center ;
-    display: flex ;
+    width: 100dvh;
+    
   }
 
   .section6 .titre {
     text-align: center;
-    align-self: center;
-    justify-self: center;
     justify-content: center;
-    width: 100dvw !important;
+    align-content: center;
+    margin-bottom: 5%;
+    width: 100dvh;
   }
+}
 
   @layer section7 {
   .section7 {
@@ -598,15 +599,10 @@
     display: flex ;
   }
 
-  .section7 .titre {
-    align-self: center;
-    justify-self: center;
-    justify-items: center;
-  }
 
   .section7 .container {
     position: relative;
-    height: 30dvh ;
+    height: auto ;
     width: 100% ;
     text-align: center ;
     justify-content: center ;
@@ -616,34 +612,36 @@
     display: flex;
     bottom: 5dvh;
   }
+  
   .section7 .tableau {
     position: relative;
     border: 1px solid #000 ;
     border-collapse: collapse ;
     height: 80% ;
-    width: 60% ;
+    width: 30%;
+    table-layout: auto;
     display: table;
     left:0 ;
   }
   
   .section7 .colone {
-    display: table-cell ;
+    display: table-row ;
     border: 1px solid #000 ;
-    padding: 5% ;
-    width: 33.33%;
+    padding: 5%;
   }
   .section7 .colone .contenuColonne {
     display: flex;
     height: 50%;
     width: 100%;
     flex-direction: column;
-    text-align: left;
-    justify-content: left;
-    align-content: start;
-    justify-items: left;
-    align-items: start;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
     line-height: 150%;
   }
+
   .section7 .colone .titreColonne {
     display: flex;
     height: 50%;
@@ -652,9 +650,9 @@
     letter-spacing: 0.2em;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 120%;
-    justify-content: left;
+    justify-content: center;
     align-content: start;
-    text-align: left;
+    text-align: center;
     color: #272624;
     font-weight: lighter;
   }
@@ -695,6 +693,15 @@
                       MEILLEURE DÉFENSE.</p>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
 
 <!--A propos-->
 <div class="section2" id = "section1">
