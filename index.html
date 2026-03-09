@@ -229,7 +229,7 @@
 @layer section5 {
   .section5 {
     position: relative;
-    height: 80dvh;
+    height: 220dvh;
     width: 100% ;
     text-align: center ;
     justify-content: space-evenly ;
@@ -244,8 +244,8 @@
   }
   .section5 .contenue {
     position: relative;
-    height: 80% ;
     width: 100% ;
+    height: 90%;
     text-align: center ;
     justify-content: space-between ;
     align-items: center ;
@@ -254,46 +254,100 @@
     background-color: #262422;
     color: #ffffff ;
     display: flex ;
+    flex-direction: column;
   }
+
+  .section5 .sectionMathilde {
+    display: flex;
+    height: 30%;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    background-color: #262422;
+    color: #ffffff ;
+  }
+  .section5 .sectionMarcAndre {
+    display: flex;
+    height: 30%;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    background-color: #262422;
+    color: #ffffff ;
+  }
+  .section5 .sectionSuzie {
+    display: flex;
+    height: 30%;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    background-color: #262422;
+    color: #ffffff ;
+  }
+
   .section5 .titre {
     width: 80%;
     text-align: center;
   }
   .section5ContenantPhoto1 {
-    height: 100% ;
+    height: 100%;
     width: 35%;
     margin: 5%;
     overflow: hidden ;
   }
   .section5ContenantPhoto2 {
-    height: 100% ;
+    height: 100%;
     width: 35% ;
     margin: 5%;
     overflow: hidden;
   }
-  .section5 img {
-    height: 100% ;
-    width: 100% ;
-    object-fit: cover;
+
+  .section5ContenantPhoto3 {
+    width: 35% ;
+    height: 100%;
+    margin: 5%;
+    overflow: hidden;
   }
 
-  .section5 .section1Text1 {
+  .section5 img {
+    width: 100% ;
+    height: 100% ;
+    object-fit: cover ;
+  }
+
+  .section5 .section5Text1 {
     height: auto;
-    width: 25% !important;
+    width: 25%;
     margin-top: 5% ;
     margin-bottom: 5% ;
     margin-right: 2.5%;
     
   }
 
-  .section5 .section1Text2 {
+  .section5 .section5Text2 {
     height: auto;
-    width: 25% !important;
+    width: 25%;
     margin-top: 5% ;
     margin-bottom: 5% ;
     margin-left: 2.5%;
     
   }
+
+  .section5 .section5Text3 {
+    height: auto;
+    width: 25%;
+    margin-top: 5% ;
+    margin-bottom: 5% ;
+    margin-left: 2.5%;
+  }
+
+
   .section5 .titreTexte {
     height: 2.5dvh;
   }
@@ -301,6 +355,7 @@
   .section5 .corpsTexte {
     text-align: center ;
     height: 2.5dvh;
+
   }
 
 }
@@ -553,6 +608,11 @@
     width: 50% !important;
     aspect-ratio: 3/4 !important;
   }
+
+  .section5ContenantPhoto3 {
+    width: 50% !important;
+    aspect-ratio: 3/4 !important;
+  }
   .section5 img {
     width: 100%;
     height: 100%;
@@ -560,21 +620,61 @@
     object-position: center;
   }
 
-  .section5 .section1Text1 {
+  .section5 .section5Text1 {
     height: auto;
-    width: 10dvw !important;
-    margin-top: 5% ;
-    margin-bottom: 5% ;
-    margin-right: 0;
+    width: 45dvw !important;
+    margin-bottom: 50% ;
+    margin-left: 10%;
   }
 
-  .section5 .section1Text2 {
+  .section5 .section5Text2 {
     height: auto;
-    width: 10dvw !important;
-    margin-top: 5% ;
-    margin-bottom: 5% ;
-    margin-left: 0;
+    width: 45dvw !important;
+    margin-bottom: 50% ;
+    margin-left: 10%;
   }
+
+  .section5 .section5Text3 {
+    height: auto;
+    width: 45dvw !important;
+    margin-bottom: 50% ;
+    margin-left: 10%;
+  }
+
+  .section5 .sectionMathilde {
+    display: flex;
+    height: 30%;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    background-color: #262422;
+    color: #ffffff ;
+  }
+  .section5 .sectionMarcAndre {
+    display: flex;
+    height: 30%;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    background-color: #262422;
+    color: #ffffff ;
+  }
+  .section5 .sectionSuzie {
+    display: flex;
+    height: 30%;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    background-color: #262422;
+    color: #ffffff ;
+  }
+
 }
 
   @layer section6 {
@@ -817,35 +917,54 @@
     ÉQUIPE
   </div>
   <div class = contenue>
-    <div class="section5ContenantPhoto1"><img src="images/photoMarcAndre.jpg" alt="photoMarcAndre" name="photoMarcAndre.jpg" /></div>
-    <div class="section1Text1">
-      <p class="titreTexte" style="font-size: 150%; font-family: Arial, Helvetica, sans-serif; text-align: center;">MARC-ANDRÉ LETARTE</p>
-      <p class="corpsTexte" style="text-align: center;">
-        Membre du barreau du Québec 
-        depuis 2006, Me Letarte plaide 
-        régulièrement à la Cour supérieure 
-        et Cour du Québec. Il s'assure que 
-        chaque client comprenne les enjeux 
-        et implications de sa situation 
-        juridique afin de maximiser leurs 
-        gains.
-      </p>
+
+    <div class="sectionMarcAndre">
+      <div class="section5ContenantPhoto1"><img src="images/photoMarcAndre.jpg" alt="photoMarcAndre" name="photoMarcAndre.jpg" /></div>
+      <div class="section5Text1">
+        <p class="titreTexte" style="font-size: 150%; font-family: Arial, Helvetica, sans-serif; text-align: center;">MARC-ANDRÉ LETARTE</p>
+        <p class="corpsTexte" style="text-align: center;">
+          Membre du barreau du Québec 
+          depuis 2006, Me Letarte plaide 
+          régulièrement à la Cour supérieure 
+          et Cour du Québec. Il s'assure que 
+          chaque client comprenne les enjeux 
+          et implications de sa situation 
+          juridique afin de maximiser leurs 
+          gains.
+        </p>
+      </div>
     </div>
-    <div class="section1Text2">
-      <p class="titreTexte" style="font-size: 150%; font-family: Arial, Helvetica, sans-serif; text-align: center;">SUZIE LEAHEY</p>
-      <p class="corpsTexte" style="text-align: center;">
-        Avec plus de 15 ans d'expérience
-        dans le domaine juridique, Mme
-        Leahey détient une solide
-        connaissance en matière familiale et
-        civile. Maîtrisant les subtilités de la
-        procédure juridique, son soutien et
-        son dévouement à la réussite de
-        votre cause ne laissera aucun doute.
-      </p>
+    <div class="sectionSuzie">
+      <div class="section5ContenantPhoto2"><img src="images/photoSuzie.jpg" alt="photoSuzie" name="photoSuzie.jpg"/></div>
+      <div class="section5Text2">
+        <p class="titreTexte" style="font-size: 150%; font-family: Arial, Helvetica, sans-serif; text-align: center;">SUZIE LEAHEY</p>
+        <p class="corpsTexte" style="text-align: center;">
+          Avec plus de 15 ans d'expérience
+          dans le domaine juridique, Mme
+          Leahey détient une solide
+          connaissance en matière familiale et
+          civile. Maîtrisant les subtilités de la
+          procédure juridique, son soutien et
+          son dévouement à la réussite de
+          votre cause ne laissera aucun doute.
+        </p>
+      </div>
     </div>
-  <div class="section5ContenantPhoto2"><img src="images/photoSuzie.jpg" alt="photoSuzie" name="photoSuzie.jpg"/></div>
-  
+    <div class="sectionMathilde">
+      <div class="section5ContenantPhoto3"><img src="images/photoMathilde.jpg" alt="photoMathilde" name="photoMathilde.jpg" /></div>
+      <div class="section5Text3">
+          <p class="titreTexte" style="font-size: 150%; font-family: Arial, Helvetica, sans-serif; text-align: center;">MATHILDE MILOT</p>
+          <p class="corpsTexte" style="text-align: center;">
+            Membre du Barreau du Québec depuis 2025,
+            Me Milot‑Beauchesne travaille chez Letarte Avocat depuis 2022.          
+            Dévouée et intègre, elle a su rapidement faire sa place
+            dans un milieu très compétitif où chaque dossier est important.
+            Me Milot-Beauchesne travaille en étroite collaboration avec
+            Me Letarte et a la responsabilité de prendre charge de toutes les
+            demandes nécessitant une intervention rapide.
+          </p>
+      </div>
+    </div>
   </div>
 </div>
 
