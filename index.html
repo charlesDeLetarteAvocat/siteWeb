@@ -1,1026 +1,886 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="fr">
-    <head> 
-        <meta charset="UTF-8"> 
-        <title>Letarte Avocat</title>
-        <style>
-
-@layer navigationBar {
-  .navbar {
-    position: relative;
-    top: 0 ;
-    left: 0 ;
-    right: 0 ;
-    width: 100dvw ;
-    height: 15dvh ;
-    background-color: #262422 ;
-    z-index: 1000 ;
-    display: flex ;
-    align-items: center;
-    font-family: "Proxima Nova";
-  }
-  .navbar a:hover,
-  .navbar a:focus {
-    color: #E3BA8A ;
-    background: none ;
-  }
-  .navbar-table {
-    position: relative ;
-    display: flex ;
-    justify-content: center ;
-    background-color: #262422 ;
-    position: absolute ;
-    right: 20% ;
-    top: 50% ;
-    width: 45% ;
-    height: 30% ;
-  }
-  .navbar-cell {
-    display: flex ;
-    border: 0.1em solid #ffffff ;
-    background-color: #262422 ;
-    width: 33.33% ;
-    height: 100% ;
-    justify-content: center ;
-    text-align: center ;
-    align-items: center ;
-  }
-  .navbar-cell a {
-    text-decoration: none ;
-    color: white ;
-    justify-content: center ;
-    text-align: center ;
-  }
-  .navbar-brand {
-    justify-content: center ;
-    align-items: center ;
-    position: absolute ;
-    display: flex ;
-    height: 80% ;
-    width: auto ;
-    top: 15% ;
-    right: 70% ;
-  }
-  .navbar-brand img {
-    height: 100% ;
-    width: 100% ;
-    object-fit: contain ;
-  }
-}
-@layer general {
-  html {
-    scroll-behavior: smooth;
-    height: 100% ;
-    width: 100% ;
-    margin: 0 ;
-    padding: 0 ;
-  }
-  body {
-    height: 100% ;
-    width: 100% ;
-    margin: 0 ;
-    padding: 0 ;
-  }
-
-  /*
-  .parallax {
-    height: 100dvh;
-    background-size: cover;
-    background-position: center;
-  }
-  */
-
-  .titre {
-    text-align: left;
-    color: #E3BA8A;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 120%;
-    letter-spacing: 0.2em;
-  }
-}
-@layer section1 {
-  .section1 {
-    height: auto ;
-    padding-top: 15dvh;
-    width: 100%;
-    justify-content: center ;
-    align-items: top ;
-    display: flex ;
-    flex-wrap: wrap ;
-    background-size: cover ;
-    background-position: center center ;
-    background-image: linear-gradient(0deg, rgba(219, 218, 217, 0.5)), url("images/background1.jpg") ;
-  }
-  .section1 .texte {
-    position: relative ;
-    height: 25% ;
-    width: 45% ;
-    top: 30% ;
-    text-align: center ;
-    color: #262422 ;
-  }
-  .section1 .titre {
-    text-align: left ;
-    font-size: 120% ;
-    font-family: Arial, Helvetica, sans-serif ;
-    font-weight: bold ;
-    letter-spacing: 0.2em ;
-    margin-bottom: 5% ;
-    color: #262422 ;
-  }
-  .section1 .devise {
-    margin-top: 0 ;
-    text-align: left ;
-    font-size: 375% ;
-  }
-}
-@layer section2 {
-  .section2 {
-    height: auto ;
-    width: 100% ;
-    text-align: center ;
-    background-color: #eceae6;
-    justify-content: center ;
-    align-items: center ;
-    display: flex ;
-    line-height: 150% ;
-    scroll-margin-top: 22dvh
-  }
-  .section2 .encadre {
-    position: relative ;
-    margin: 2%;
-    height: auto ;
-    width: 50% ;
-    border: #E3BA8A solid ;
-    text-align: justify ;
-    padding-left: 8% ;
-    padding-right: 8% ;
-    display: flex ;
-    flex-direction: column ;
-  }
-
-  .section2 .titre {
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letarte Avocat - Droit familial à Trois-Rivières</title>
+    <meta name="description" content="LETARTE AVOCAT offre des services exclusivement liés au droit familial à Trois-Rivières. Obtenez la meilleure défense.">
+    <meta name="keywords" content="Letarte Avocat, droit familial, divorce, séparation, pension alimentaire, Trois-Rivières, Mauricie, avocat">
     
-    position: relative ;
-  }
-
-}
-@layer section3 {
-  .section3 {
-    position: relative;
-    height: 50dvh;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    display: flex;
-  }
-  /*
-  .section3 .parallax {
-    width: 100% ;
-  }
-    */
-  .section3ContainerImage {
-    height: 100% ;
-    width: 100% ;
-    overflow: hidden;
-    display: flex;
-  }
-  .section3 img {
-    width: 100% ;
-    height: auto ;
-  }
-}
-@layer section4 {
-  .section4 {
-    position: relative;
-    height: auto ;
-    width: 100% ;
-    text-align: left ;
-    justify-content: center ;
-    align-items: center ;
-    display: flex ;
-    flex-direction: column ;
-  }
-  .section4 .titre {
-    position: relative;
-    width: 50%;
-    display: flex;
-  }
-  .section4 .contenue {
-    position: relative;
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-  }
-  .section4 .liste {
-    text-align: justify;
-    position: relative;
-    padding-left: 5%;
-    padding-right: 10%;
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    line-height: 150%;
-  }
-  .section4 .liste li {
-    margin-bottom: 4%;
-  }
-  .section4 .liste li ul li {
-    margin-bottom: 2%;
-  }
-}
-@layer section5 {
-  .section5 {
-    position: relative;
-    height: 220dvh;
-    width: 100% ;
-    text-align: center ;
-    justify-content: space-evenly ;
-    justify-items: center ;
-    align-items: center ;
-    align-content: center ;
-    background-color: #262422;
-    color: #ffffff ;
-    display: flex ;
-    scroll-margin-top: 18dvh;
-    flex-direction: column;
-  }
-  .section5 .contenue {
-    position: relative;
-    width: 100% ;
-    height: 90%;
-    text-align: center ;
-    justify-content: space-between ;
-    align-items: center ;
-    justify-items: center ;
-    align-content: center ;
-    background-color: #262422;
-    color: #ffffff ;
-    display: flex ;
-    flex-direction: column;
-  }
-
-  .section5 .sectionMathilde {
-    display: flex;
-    height: 30%;
-    width: 60%;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    background-color: #262422;
-    color: #ffffff ;
-  }
-  .section5 .sectionMarcAndre {
-    display: flex;
-    height: 30%;
-    width: 60%;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    background-color: #262422;
-    color: #ffffff ;
-  }
-  .section5 .sectionSuzie {
-    display: flex;
-    height: 30%;
-    width: 60%;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    background-color: #262422;
-    color: #ffffff ;
-  }
-
-  .section5 .titre {
-    width: 80%;
-    text-align: center;
-  }
-  .section5ContenantPhoto1 {
-    height: 100%;
-    width: 35%;
-    margin: 5%;
-    overflow: hidden ;
-  }
-  .section5ContenantPhoto2 {
-    height: 100%;
-    width: 35% ;
-    margin: 5%;
-    overflow: hidden;
-  }
-
-  .section5ContenantPhoto3 {
-    width: 35% ;
-    height: 100%;
-    margin: 5%;
-    overflow: hidden;
-  }
-
-  .section5 img {
-    width: 100% ;
-    height: 100% ;
-    object-fit: cover ;
-  }
-
-  .section5 .section5Text1 {
-    height: auto;
-    width: 25%;
-    margin-top: 5% ;
-    margin-bottom: 5% ;
-    margin-right: 2.5%;
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
     
-  }
+    <style>
+        /* ========================================= */
+        /* CSS Variables & Theme Definitions         */
+        /* ========================================= */
+        :root {
+            /* Original Site Colors */
+            --color-primary-dark: #262422; /* very dark grey/brown */
+            --color-accent-gold: #E3BA8A;  /* gold */
+            --color-bg-light: #eceae6;     /* light grey beige */
+            --color-text-body: #4a4a4a;
+            --color-white: #ffffff;
+            
+            /* Typography */
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+            
+            /* Sizing & Spacing */
+            --nav-height: 80px;
+            --section-padding: 80px 20px;
+            
+            /* Transitions */
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-  .section5 .section5Text2 {
-    height: auto;
-    width: 25%;
-    margin-top: 5% ;
-    margin-bottom: 5% ;
-    margin-left: 2.5%;
-    
-  }
+        /* ========================================= */
+        /* Reset & Base Styles                       */
+        /* ========================================= */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-  .section5 .section5Text3 {
-    height: auto;
-    width: 25%;
-    margin-top: 5% ;
-    margin-bottom: 5% ;
-    margin-left: 2.5%;
-  }
+        html {
+            scroll-behavior: smooth;
+        }
 
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text-body);
+            line-height: 1.6;
+            background-color: var(--color-white);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased; /* Safari enhancement */
+            -moz-osx-font-smoothing: grayscale;
+        }
 
-  .section5 .titreTexte {
-    height: 2.5dvh;
-  }
+        h1, h2, h3, h4 {
+            font-family: var(--font-heading);
+            color: var(--color-primary-dark);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
 
-  .section5 .corpsTexte {
-    text-align: center ;
-    height: 2.5dvh;
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition-smooth);
+        }
 
-  }
+        ul {
+            list-style: none;
+        }
 
-}
-@layer section6 {
-  .section6 {
-    position: relative;
-    height: auto ;
-    width: 60% ;
-    text-align: left ;
-    justify-content: center ;
-    align-items: center ;
-    display: flex;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
 
-}
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--color-accent-gold);
+            margin: 15px auto 0;
+            transition: width 0.3s ease;
+        }
 
-@layer section7 {
-  .section7 {
-    position: relative;
-    height: auto ;
-    width: 100% ;
-    display: flex ;
-  }
+        .section-title:hover::after {
+            width: 100px;
+        }
 
-  .section7 .container {
-    position: relative;
-    height: 30dvh ;
-    width: 100% ;
-    text-align: center ;
-    justify-content: center ;
-    align-items: center ;
-    justify-items: center;
-    align-self: center;
-    display: flex;
-    bottom: 5dvh;
-  }
-  .section7 .tableau {
-    position: relative;
-    border: 1px solid #000;
-    border-collapse: collapse;
-    height: 100%;
-    width: 80%;
-    display: table;
-    left: 0;
-  }
-  
-  .section7 .colone {
-    display: table-cell ;
-    border: 1px solid #000 ;
-    padding: 2% ;
-    padding-left: 5%;
-    padding-right: 5%;
-    width: 33.33%;
-  }
-  .section7 .colone .contenuColonne {
-    display: flex;
-    height: 50%;
-    width: 100%;
-    flex-direction: column;
-    text-align: left;
-    justify-content: left;
-    align-content: start;
-    justify-items: left;
-    align-items: start;
-    line-height: 150%;
-  }
-  .section7 .colone .titreColonne {
-    display: flex;
-    height: 50%;
-    width: 100%;
-    flex-direction: column;
-    letter-spacing: 0.2em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 120%;
-    justify-content: left;
-    align-content: start;
-    text-align: left;
-    color: #272624;
-    font-weight: lighter;
-  }
+        /* Utility classes for animation */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-}
-  
-@layer overdriveStyles { 
-  
-@media (max-aspect-ratio: 1) {
+        /* ========================================= */
+        /* Navigation (Safari Compatible Flexbox)    */
+        /* ========================================= */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: var(--nav-height);
+            background-color: var(--color-primary-dark);
+            z-index: 1000;
+            transition: var(--transition-smooth);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
 
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
 
+        .nav-brand img {
+            height: 60px; /* Adjust based on original logo */
+            width: auto;
+            object-fit: contain;
+        }
 
-  body {
-    font-size: 150%;
-  }
-    .titre {
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
 
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 120%;
-        letter-spacing: 0.2em;
-      }
-  
-      .navbar {
-    width: 100dvh ;
-  }
-    
+        .nav-menu li a {
+            color: var(--color-white);
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            position: relative;
+            padding: 5px 0;
+        }
 
-  @layer section1 {
-   .section1 {
-    height: auto ;
-    padding-top: 15dvh;
-    width: 100dvh ;
-    justify-content: center ;
-    align-items: top ;
-    display: flex ;
-    flex-wrap: wrap ;
-    background-size: cover ;
-    background-position: center center ;
-    background-image: linear-gradient(0deg, rgba(219, 218, 217, 0.5)), url("images/background1.jpg") ;
-  }
-  .section1 .texte {
-    position: relative ;
-    height: 25% ;
-    width: 45% ;
-    top: 49% ;
-    text-align: center ;
-    color: #262422 ;
-  }
-  .section1 .titre {
-    text-align: left ;
-    font-size: 120% ;
-    font-family: Arial, Helvetica, sans-serif ;
-    font-weight: bold ;
-    letter-spacing: 0.2em ;
-    margin-bottom: 5% ;
-    color: #262422 ;
-  }
-  .section1 .devise {
-    margin-top: 0 ;
-    text-align: left ;
-    font-size: 375% ;
-  }
-}
+        .nav-menu li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-accent-gold);
+            transition: var(--transition-smooth);
+        }
 
-  @layer section2 {
-  .section2 {
-    height: auto ;
-    width: 100dvh ;
-    text-align: center ;
-    background-color: #eceae6;
-    justify-content: center ;
-    align-items: center ;
-    display: flex ;
-    line-height: 150% ;
-    scroll-margin-top: 22dvh
-  }
+        .nav-menu li a:hover::after,
+        .nav-menu li a.active::after {
+            width: 100%;
+        }
 
-  .section2 .encadre {
-  width: 30% ;
-  padding-left: 12%;
-  padding-right: 12%;
-  }
-  
-  .section2 .titre {
-    position: relative;
-    align-self: center;
-    justify-self: center;
-    justify-content: center;
-  }
+        .nav-menu li a:hover,
+        .nav-menu li a.active {
+            color: var(--color-accent-gold);
+        }
 
-}
+        /* Mobile Menu Toggle */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 10px;
+            z-index: 1001; /* Above menu */
+        }
 
-  @layer section4 {
-  .section4 {
-    position: relative;
-    height: auto ;
-    width: 100dvh ;
-    text-align: left ;
-    justify-content: center ;
-    align-items: center ;
-    display: flex ;
-    flex-direction: column ;
-  }
-  .section4 .titre {
-    position: relative;
-    width: 50%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-  }
-  .section4 .contenue {
-    position: relative;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-  }
-  .section4 .liste {
-    text-align: justify;
-    position: relative;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    line-height: 150%;
-  }
-  .section4 .liste li {
-    margin-bottom: 4%;
-  }
-  .section4 .liste li ul li {
-    margin-bottom: 2%;
-  }
-}
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: var(--color-white);
+            margin: 5px 0;
+            transition: var(--transition-smooth);
+        }
 
-  @layer section5 {
-  .section5 {
-    position: relative;
-    height: auto ;
-    padding-top: 5dvh ;
-    width: 100dvh ;
-    text-align: center ;
-    justify-content: space-evenly ;
-    justify-items: center ;
-    align-items: center ;
-    align-content: center ;
-    background-color: #262422 ;
-    color: #ffffff ;
-    display: flex ;
-    scroll-margin-top: 18dvh;
-    flex-direction: column;
-  }
-  .section5 .contenue {
-    position: relative;
-    height: 90% ;
-    width: 100% ;
-    text-align: center ;
-    justify-content: space-between ;
-    align-items: center ;
-    justify-items: center ;
-    align-content: center ;
-    background-color: #262422 ;
-    color: #ffffff ;
-    display: flex ;
-    flex-direction: column;
-  }
-  .section5 .titre {
-    width: 48%;
-  }
-  .section5ContenantPhoto1 {
-    width: 50% !important;
-    aspect-ratio: 3/4 !important;
-  }
-  .section5ContenantPhoto2 {
-    width: 50% !important;
-    aspect-ratio: 3/4 !important;
-  }
+        /* ========================================= */
+        /* Hero Section                              */
+        /* ========================================= */
+        .hero {
+            height: 100vh;
+            min-height: 600px;
+            background: linear-gradient(rgba(38, 36, 34, 0.7), rgba(38, 36, 34, 0.7)), url('images/background1.jpg') center/cover no-repeat fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: var(--nav-height); /* Offset for fixed nav */
+            color: var(--color-white);
+            position: relative;
+        }
+        
+        /* Safari fixed background fix */
+        @supports (-webkit-touch-callout: none) {
+           .hero {
+               background-attachment: scroll;
+           }
+        }
 
-  .section5ContenantPhoto3 {
-    width: 50% !important;
-    aspect-ratio: 3/4 !important;
-  }
-  .section5 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
+        .hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+            z-index: 2;
+        }
 
-  .section5 .section5Text1 {
-    height: auto;
-    width: 50dvw !important;
-    margin-bottom: 40% ;
-    margin-left: 10%;
-  }
+        .hero-subtitle {
+            font-family: var(--font-body);
+            color: var(--color-accent-gold);
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            display: block;
+        }
 
-  .section5 .section5Text2 {
-    height: auto;
-    width: 50dvw !important;
-    margin-bottom: 40% ;
-    margin-left: 10%;
-  }
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            color: var(--color-white);
+            line-height: 1.2;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
 
-  .section5 .section5Text3 {
-    height: auto;
-    width: 50dvw !important;
-    margin-bottom: 40% ;
-    margin-left: 10%;
-  }
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background-color: transparent;
+            color: var(--color-accent-gold);
+            border: 2px solid var(--color-accent-gold);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition-smooth);
+            cursor: pointer;
+        }
 
-  .section5 .sectionMathilde {
-    display: flex;
-    height: 40%;
-    width: 60%;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    background-color: #262422;
-    color: #ffffff ;
-  }
-  .section5 .sectionMarcAndre {
-    display: flex;
-    height: 30%;
-    width: 60%;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    background-color: #262422;
-    color: #ffffff ;
-  }
-  .section5 .sectionSuzie {
-    display: flex;
-    height: 30%;
-    width: 60%;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    background-color: #262422;
-    color: #ffffff ;
-  }
+        .btn:hover {
+            background-color: var(--color-accent-gold);
+            color: var(--color-primary-dark);
+        }
 
-}
+        .hero-scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
 
-  @layer section6 {
+        .hero-scroll-indicator svg {
+            fill: var(--color-white);
+            width: 30px;
+            height: 30px;
+        }
 
-  .section6 {
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    position: relative;
-    width: 100dvh;
-    
-  }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+            40% { transform: translateY(-20px) translateX(-50%); }
+            60% { transform: translateY(-10px) translateX(-50%); }
+        }
 
-  .section6 .titre {
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    margin-bottom: 5%;
-    width: 100dvh;
-  }
-}
+        /* ========================================= */
+        /* About Section                             */
+        /* ========================================= */
+        .about {
+            padding: var(--section-padding);
+            background-color: var(--color-bg-light);
+            text-align: center;
+        }
 
-  @layer section7 {
-  .section7 {
-    position: relative;
-    height: auto ;
-    width: 100dvh ;
-    display: flex ;
-  }
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--color-white);
+            padding: 60px;
+            border: 1px solid var(--color-accent-gold);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+        
+        .about-content:hover {
+            transform: translateY(-5px);
+        }
 
+        .about-content p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
 
-  .section7 .container {
-    position: relative;
-    height: auto ;
-    width: 100% ;
-    text-align: center ;
-    justify-content: center ;
-    align-items: center ;
-    justify-items: center;
-    align-self: center;
-    display: flex;
-    bottom: 5dvh;
-  }
-  
-  .section7 .tableau {
-    position: relative;
-    border: 1px solid #000 ;
-    border-collapse: collapse ;
-    height: 80% ;
-    width: 30%;
-    table-layout: auto;
-    display: table;
-    left:0 ;
-  }
-  
-  .section7 .colone {
-    display: table-row ;
-    border: 1px solid #000 ;
-    padding: 5%;
-  }
-  .section7 .colone .contenuColonne {
-    display: flex;
-    height: 50%;
-    width: 100%;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    line-height: 150%;
-  }
+        .about-highlight {
+            font-weight: bold;
+            color: var(--color-primary-dark);
+        }
+        .about-gold {
+            color: var(--color-accent-gold);
+            font-weight: bold;
+        }
 
-  .section7 .colone .titreColonne {
-    display: flex;
-    height: 50%;
-    width: 100%;
-    flex-direction: column;
-    letter-spacing: 0.2em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 120%;
-    justify-content: center;
-    align-content: start;
-    text-align: center;
-    color: #272624;
-    font-weight: lighter;
-  }
+        /* ========================================= */
+        /* Services Section (Accordion/Grid)         */
+        /* ========================================= */
+        .services {
+            padding: var(--section-padding);
+            background-color: var(--color-white);
+        }
+        
+        .services-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px auto;
+            font-size: 1.1rem;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
 
-}
-}
-}
+        .service-card {
+            background: var(--color-bg-light);
+            padding: 30px;
+            border-top: 4px solid var(--color-accent-gold);
+            transition: var(--transition-smooth);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
 
-/* commentaire */
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
 
-/*# sourceMappingURL=style.css.map */
-        </style> 
-    </head>
+        .service-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
 
-    <body> 
-      <div class="navbar" style="background-color: #262422;" role="banner">
-          <a class="navbar-brand" href="/" style="color: rgb(255, 255, 255);">
-            <img src="images/logo.png" alt="Letarte Avocat">
-          </a> 
-        <div class="navbar-table">
-          <div class="navbar-cell"><a href="#section1">À propos</a></div>
-          <div class="navbar-cell"><a href="#section2">Équipe</a></div>
-          <div class="navbar-cell"><a href="#section3">Nous joindre</a></div>
+        .service-list {
+            margin-top: 15px;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        .service-list li {
+            position: relative;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+        
+        .service-list li::before {
+            content: "•";
+            color: var(--color-accent-gold);
+            font-size: 1.5rem;
+            position: absolute;
+            left: -20px;
+            top: -5px;
+        }
+
+        .service-list ul {
+            margin-top: 5px;
+            padding-left: 15px;
+        }
+        
+        .service-list ul li::before {
+            content: "◦";
+            font-size: 1.2rem;
+            top: -2px;
+        }
+
+        /* ========================================= */
+        /* Team Section                              */
+        /* ========================================= */
+        .team {
+            padding: var(--section-padding);
+            background-color: var(--color-primary-dark);
+            color: var(--color-white);
+            text-align: center;
+        }
+
+        .team .section-title {
+            color: var(--color-white);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .team-member {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 0;
+            transition: var(--transition-smooth);
+            overflow: hidden;
+            border-bottom: 3px solid transparent;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            border-bottom-color: var(--color-accent-gold);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .team-member-img-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 120%; /* Aspect ratio for portraits */
+            overflow: hidden;
+        }
+
+        .team-member img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            transition: transform 0.5s ease;
+        }
+
+        .team-member:hover img {
+            transform: scale(1.05);
+        }
+
+        .team-info {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .team-name {
+            color: var(--color-white);
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .team-role {
+            color: var(--color-accent-gold);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .team-desc {
+            font-size: 0.95rem;
+            color: #d1d1d1;
+            line-height: 1.6;
+            margin-top: auto; /* Push to bottom if names are variable length */
+        }
+
+        /* ========================================= */
+        /* Contact & Footer Section                  */
+        /* ========================================= */
+        .contact-footer {
+            background-color: var(--color-white);
+        }
+        
+        .contact {
+            padding: var(--section-padding);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .contact-item {
+            text-align: center;
+            padding: 30px;
+            background: #fafafa;
+            border: 1px solid #eee;
+            transition: var(--transition-smooth);
+        }
+
+        .contact-item:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border-color: var(--color-accent-gold);
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            color: var(--color-accent-gold);
+            margin-bottom: 15px;
+        }
+        
+        .contact-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: var(--color-accent-gold);
+        }
+
+        .contact-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .contact-item p,
+        .contact-item a {
+            color: var(--color-text-body);
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .contact-item a:hover {
+            color: var(--color-accent-gold);
+        }
+
+        .footer-bottom {
+            background-color: var(--color-primary-dark);
+            color: rgba(255,255,255,0.7);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* ========================================= */
+        /* Responsive Design (Media Queries)         */
+        /* ========================================= */
+        @media (max-width: 900px) {
+            .nav-menu {
+                position: fixed;
+                top: var(--nav-height);
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - var(--nav-height));
+                background-color: var(--color-primary-dark);
+                flex-direction: column;
+                justify-content: center;
+                gap: 2rem;
+                transition: left 0.3s ease;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-menu li a {
+                font-size: 1.5rem;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            /* Hamburger animation */
+            .hamburger.active span:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            .hamburger.active span:nth-child(2) {
+                opacity: 0;
+            }
+            .hamburger.active span:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+
+            .about-content {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="nav-brand" aria-label="Retour à l'accueil">
+                <img src="images/logo.png" alt="Letarte Avocat Logo">
+            </a>
+            
+            <button class="hamburger" id="mobile-menu-btn" aria-label="Menu principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#a-propos" class="nav-link">À propos</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#equipe" class="nav-link">Équipe</a></li>
+                <li><a href="#nous-joindre" class="nav-link">Nous joindre</a></li>
+            </ul>
         </div>
-     </div>
+    </nav>
 
-        <!--Slogan-->
-<div class="section1">
-  <div class="texte">
-    <p class=titre>LETARTE AVOCAT</p>
-    <p class="devise">VOUS MÉRITEZ LA<br />
-                      MEILLEURE DÉFENSE.</p>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-<!--A propos-->
-<div class="section2" id = "section1">
-  <div class = "encadre">
-    <div class = "espaceur"></div>
-    <div class = titre>
-    </br>  À PROPOS </br> </br>
-    </div>
-    
-    <p>
-      Situé à Trois-Rivières, <span style="color:#272624 ; font-family:Arial, Helvetica, sans-serif; font-weight: bold;">LETARTE</span> <span style="font-weight:bold; color:#E3BA8A  ; font-family:Arial, Helvetica, sans-serif;">AVOCAT</span> offre des services exclusivement liés au droit familial. Détenant une solide expérience en litige et plaidoirie, chaque dossier est abordé avec une approche personnalisée et gagnante.<br /><br />
-      Depuis 2006, notre mission et notre engagement sont clairs: vous offrir rigueur et efficacité tout au long du cheminement de votre cause. Avec plus d'un millier de clients représentés à ce jour à travers la province, nous sommes la référence en Mauricie.<br /><br />
-      Nous pouvons vous aider à faire face au processus judiciaire. Quotidiennement, nous visons l'excellence pour tous nos clients.
-    </p>
-  </div>
-</div>
-
-<!--ImageParralaxe-->
-<!--<div class="section3">
-  <div class="parallax">
-    <div class="section3ContainerImage" style="overflow-x: hidden; overflow-y: hidden; display: flex; flex-wrap: wrap; height: 100%; width: 100%;"><img src="images/background2.jpg" alt="background2" name="background2.jpg" style="position: relative; height: 100%; width: 100%; top: 10px;" /></div>
-  </div>
-</div>-->
-
-<!--Services-->
-<div class="section4" >
-  <div class  = "titre">
-    <p>NOS SERVICES</p>
-  </div>
-  <div class="contenue">
-    <div class = sousTitre>
-    <p>DROIT FAMILIAL</p>
-    </div>
-    <div class="liste">
-      <p>Représentation à la Cour supérieure lors de séparation et divorce; </br> </br> Obtention d'un jugement à la suite d'un procès, d'une négociation ou d'un règlement à l'amiable concernant:</p>
-      <ul>
-        <li>
-          La garde d'enfant et le partage du temps parental
-          <ul>
-            <li>
-              Garde majoritaire à un parent
-            </li>
-             <li>
-              Garde partagée
-            </li>
-          </ul>
-        </li>
-        <li>
-          Le droit à une pension alimentaire pour les enfants et époux
-          <ul>
-            <li>
-              Obtention d'un jugement afin que la pension soit fixée, perçue et administrée automatiquement
-            </li>
-             <li>
-              Révision d'un jugement suite à des changements dans les besoins ou revenus
-            </li>
-             <li>
-              Fixation d'un revenu lors de mauvaise foi d'un payeur ou bénéficiaire d'une pension alimentaire (revenus occultes, train de vie incompatible ou refus de maximiser ses revenus sans raison)
-            </li>
-          </ul>
-        </li>
-        <li>
-          Le partage des actifs, fin de la copropriété et réclamations financière découlant d'une rupture
-          <ul>
-            <li>
-              Partage des biens et droits en vertu du patrimoine familial, de la dissolution du régime matrimonial et prestation compensatoire dans le cadre d'une Demande en divorce 
-            </li>
-             <li>
-              Recours pour le partage des biens et en enrichissement injustifié lors de rupture des conjoints de fait
-            </li>
-          </ul>
-        </li>
-        <li>
-          L'exercice de l'autorité parentale (prendre les décisions nécessaires au bien-être de son enfant)
-          <ul>
-            <li>
-              Retrait d'un attribut de l'autorité ou de son exercice lors d'incompétence d'un parent
-            </li>
-             <li>
-              Déchéance de l'autorité lors de motifs graves, dont violence familiale ou infraction criminelle commise par un parent
-            </li>
-          </ul>
-        </li>
-        <li>
-          La réclamation ou contestation de filiation
-        </li>
-        <li>
-          Les recours en changement de nom
-          <ul>
-            <li>
-              L'enfant n'a plus de filiation ou a été abandonné
-            </li>
-             <li>
-              Le parent a été déchu de son autorité parentale
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <p>Avec nous, tous les aspects de la garde de chaque enfant, de la protection de vos biens et de la protection de vos droits sont assurés. <br /><br /> Prendre note que nous n'acceptons pas les mandats d'aide-juridique et que nous prenons en priorité les dossiers à Trois-Rivières et Shawinigan.</p>
-    </div>
-  </div>
-</div>
-
-<!--Equipe-->
-<div class="section5" id = "section2">
-  <div class = titre>
-    ÉQUIPE
-  </div>
-  <div class = contenue>
-
-    <div class="sectionMarcAndre">
-      <div class="section5ContenantPhoto1"><img src="images/photoMarcAndre.jpg" alt="photoMarcAndre" name="photoMarcAndre.jpg" /></div>
-      <div class="section5Text1">
-        <p class="titreTexte" style="font-size: 150%; font-family: Arial, Helvetica, sans-serif; text-align: center;">MARC-ANDRÉ LETARTE</p>
-        <p class="corpsTexte" style="text-align: center;">
-          <br>Membre du barreau du Québec 
-          depuis 2006, Me Letarte plaide 
-          régulièrement à la Cour supérieure 
-          et Cour du Québec. Il s'assure que 
-          chaque client comprenne les enjeux 
-          et implications de sa situation 
-          juridique afin de maximiser leurs 
-          gains.
-        </p>
-      </div>
-    </div>
-    <div class="sectionMathilde">
-      <div class="section5ContenantPhoto3"><img src="images/photoMathilde.jpg" alt="photoMathilde" name="photoMathilde.jpg" /></div>
-      <div class="section5Text3">
-          <p class="titreTexte" style="font-size: 150%; font-family: Arial, Helvetica, sans-serif; text-align: center;">MATHILDE MILOT-BEAUCHESNE</p>
-          <p class="corpsTexte" style="text-align: center;">
-            <br>Membre du Barreau du Québec depuis 2025,
-            Me Milot‑Beauchesne travaille chez Letarte Avocat depuis 2022.          
-            Dévouée et intègre, elle a su rapidement faire sa place
-            dans un milieu très compétitif où chaque dossier est important.
-            Me Milot-Beauchesne travaille en étroite collaboration avec
-            Me Letarte et a la responsabilité de prendre charge de toutes les
-            demandes nécessitant une intervention rapide.
-          </p>
-      </div>
-    </div>
-
-    <div class="sectionSuzie">
-      <div class="section5ContenantPhoto2"><img src="images/photoSuzie.jpg" alt="photoSuzie" name="photoSuzie.jpg"/></div>
-      <div class="section5Text2">
-        <p class="titreTexte" style="font-size: 150%; font-family: Arial, Helvetica, sans-serif; text-align: center;">SUZIE LEAHEY</p>
-        <p class="corpsTexte" style="text-align: center;">
-          <br>Avec plus de 15 ans d'expérience
-          dans le domaine juridique, Mme
-          Leahey détient une solide
-          connaissance en matière familiale et
-          civile. Maîtrisant les subtilités de la
-          procédure juridique, son soutien et
-          son dévouement à la réussite de
-          votre cause ne laissera aucun doute.
-        </p>
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-<!--Espace-->
-<div class="section6">
-  <div class = titre>
-    <p>Nous joindre</p>
-  </div>
-</div>
-
-<!--Nous Joindre-->
-<div class="section7" id = "section3">
-  <div class="container" >
-    <div class="tableau" >
-      <div class="colone" >
-        <div class = titreColonne> <p>CONTACT</p> </div> 
-        <div class = contenuColonne>
-          <p>Email : <a href= "mailto: ma@letarteavocat.com"> ma@letarteavocat.com</a> <br />
-          Téléphone : <a href="tel:819-992-2407"> (819) 992-2407 </a> <br />
+    <!-- Hero Section -->
+    <header class="hero" id="accueil">
+        <div class="hero-content fade-in-up">
+            <span class="hero-subtitle">Letarte Avocat</span>
+            <h1 class="hero-title">Vous méritez la meilleure défense.</h1>
+            <a href="#a-propos" class="btn" aria-label="En savoir plus sur nos services">Découvrir</a>
         </div>
-      </div>
+        <a href="#a-propos" class="hero-scroll-indicator" aria-label="Défiler vers le bas">
+            <svg viewBox="0 0 24 24">
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+            </svg>
+        </a>
+    </header>
 
-      <div class="colone" >
-        <div class = titreColonne><p>ADRESSE <br /></p></div>
-        <div class = contenuColonne>
-          <p>LETARTE <span style="color: #E3BA8A; ">AVOCAT</span> <br />
-          1350, rue Royale, bureau 900 <br />
-          Trois-Rivières (Québec), G9A 4J4 <br /></p>
+    <!-- About Section -->
+    <section class="about" id="a-propos">
+        <div class="container">
+            <div class="about-content fade-in-up">
+                <h2 class="section-title">À Propos</h2>
+                <p>Situé à Trois-Rivières, <span class="about-highlight">LETARTE</span> <span class="about-gold">AVOCAT</span> offre des services exclusivement liés au droit familial. Détenant une solide expérience en litige et plaidoirie, chaque dossier est abordé avec une approche personnalisée et gagnante.</p>
+                <p>Depuis 2006, notre mission et notre engagement sont clairs : vous offrir rigueur et efficacité tout au long du cheminement de votre cause. Avec plus d'un millier de clients représentés à ce jour à travers la province, nous sommes la référence en Mauricie.</p>
+                <p>Nous pouvons vous aider à faire face au processus judiciaire. Quotidiennement, nous visons l'excellence pour tous nos clients.</p>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="colone" >
-        <div class = titreColonne> <p> HEURES <br /> D' OUVERTURES</p></div>
-        <div class = contenuColonne>
-          <p>
-            Lundi - Jeudi: 8:00 à 16:00 <br />
-            ​​Vendredi: 8:00 - 12:00 <br />
-            ​Fin de semaine: FERMÉ
-          </p>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Nos Services</h2>
+            <div class="services-intro fade-in-up">
+                <p><strong>Droit Familial:</strong> Représentation à la Cour supérieure lors de séparation et divorce. Obtention d'un jugement à la suite d'un procès, d'une négociation ou d'un règlement à l'amiable concernant :</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Garde -->
+                <div class="service-card fade-in-up">
+                    <h3>Garde d'enfant</h3>
+                    <p>La garde d'enfant et le partage du temps parental.</p>
+                    <ul class="service-list">
+                        <li>Garde majoritaire à un parent</li>
+                        <li>Garde partagée</li>
+                    </ul>
+                </div>
+                
+                <!-- Pension -->
+                <div class="service-card fade-in-up">
+                    <h3>Pension alimentaire</h3>
+                    <p>Le droit à une pension alimentaire pour les enfants et époux.</p>
+                    <ul class="service-list">
+                        <li>Obtention d'un jugement pour fixation et perception</li>
+                        <li>Révision d'un jugement</li>
+                        <li>Fixation d'un revenu lors de mauvaise foi</li>
+                    </ul>
+                </div>
+                
+                <!-- Partage Actifs -->
+                <div class="service-card fade-in-up">
+                    <h3>Partage des actifs</h3>
+                    <p>Fin de la copropriété et réclamations financières découlant d'une rupture.</p>
+                    <ul class="service-list">
+                        <li>Partage en vertu du patrimoine familial / régime matrimonial</li>
+                        <li>Recours en enrichissement injustifié (conjoints de fait)</li>
+                    </ul>
+                </div>
+                
+                <!-- Autorité parentale -->
+                <div class="service-card fade-in-up">
+                    <h3>Autorité parentale</h3>
+                    <p>L'exercice de l'autorité parentale (prendre les décisions nécessaires).</p>
+                    <ul class="service-list">
+                        <li>Retrait d'un attribut de l'autorité</li>
+                        <li>Déchéance de l'autorité lors de motifs graves</li>
+                    </ul>
+                </div>
+
+                <!-- Autres -->
+                <div class="service-card fade-in-up">
+                    <h3>Autres recours</h3>
+                    <ul class="service-list">
+                        <li>La réclamation ou contestation de filiation</li>
+                        <li>Les recours en changement de nom</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="services-intro fade-in-up" style="margin-top: 50px;">
+                <p>Avec nous, tous les aspects de la garde de chaque enfant, de la protection de vos biens et de la protection de vos droits sont assurés.</p>
+                <p style="font-size: 0.9em; margin-top: 15px; font-style: italic;">* Prendre note que nous n'acceptons pas les mandats d'aide-juridique et que nous prenons en priorité les dossiers à Trois-Rivières et Shawinigan.</p>
+            </div>
         </div>
-      </div>
+    </section>
 
-    </div>
-  </div>
-</div>
+    <!-- Team Section -->
+    <section class="team" id="equipe">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Équipe</h2>
+            
+            <div class="team-grid">
+                <div class="team-member fade-in-up">
+                    <div class="team-member-img-wrapper">
+                        <img src="images/photoMarcAndre.jpg" alt="Me Marc-André Letarte" loading="lazy">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Marc-André Letarte</h3>
+                        <span class="team-role">Avocat Associé</span>
+                        <p class="team-desc">Membre du barreau du Québec depuis 2006, Me Letarte plaide régulièrement à la Cour supérieure et Cour du Québec. Il s'assure que chaque client comprenne les enjeux et implications de sa situation juridique afin de maximiser leurs gains.</p>
+                    </div>
+                </div>
+                
+                <div class="team-member fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="team-member-img-wrapper">
+                        <img src="images/photoMathilde.jpg" alt="Me Mathilde Milot-Beauchesne" loading="lazy">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Mathilde Milot-Beauchesne</h3>
+                        <span class="team-role">Avocate</span>
+                        <p class="team-desc">Membre du Barreau du Québec depuis 2025, Me Milot‑Beauchesne travaille chez Letarte Avocat depuis 2022. Dévouée et intègre, elle a su rapidement faire sa place dans un milieu compétitif.</p>
+                    </div>
+                </div>
+                
+                <div class="team-member fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="team-member-img-wrapper">
+                        <img src="images/photoSuzie.jpg" alt="Suzie Leahey" loading="lazy">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Suzie Leahey</h3>
+                        <span class="team-role">Adjointe Juridique</span>
+                        <p class="team-desc">Avec plus de 15 ans d'expérience dans le domaine juridique, Mme Leahey détient une solide connaissance en matière familiale et civile. Son soutien et son dévouement ne laisseront aucun doute.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section class="contact-footer" id="nous-joindre">
+        <div class="contact">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Nous Joindre</h2>
+                
+                <div class="contact-grid">
+                    <div class="contact-item fade-in-up">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </div>
+                        <h3>Contact</h3>
+                        <p>Courriel : <a href="mailto:ma@letarteavocat.com">ma@letarteavocat.com</a></p>
+                        <p>Téléphone : <a href="tel:819-992-2407">(819) 992-2407</a></p>
+                    </div>
+                    
+                    <div class="contact-item fade-in-up" style="transition-delay: 0.1s;">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                        </div>
+                        <h3>Adresse</h3>
+                        <p>LETARTE AVOCAT<br>
+                        1350, rue Royale, bureau 900<br>
+                        Trois-Rivières (Québec), G9A 4J4</p>
+                    </div>
+                    
+                    <div class="contact-item fade-in-up" style="transition-delay: 0.2s;">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg>
+                        </div>
+                        <h3>Heures d'ouverture</h3>
+                        <p>Lundi - Jeudi : 8:00 à 16:00<br>
+                        Vendredi : 8:00 à 12:00<br>
+                        Fin de semaine : FERMÉ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Letarte Avocat. Tous droits réservés.</p>
+        </div>
+    </section>
 
-<div class="row sectionBlockLayout text-left">
-  <div class="container" ></div></div>
-</div>
+    <!-- JavaScript Capabilities -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Set current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
 
+            // Mobile Menu Toggle
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const navMenu = document.getElementById('nav-menu');
+            const navLinks = document.querySelectorAll('.nav-link');
 
-    </body>
- </html>
+            mobileBtn.addEventListener('click', () => {
+                mobileBtn.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking a link
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileBtn.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+
+            // Active Menu Link on Scroll
+            const sections = document.querySelectorAll('section, header');
+            
+            window.addEventListener('scroll', () => {
+                let current = '';
+                
+                // Active link highlighting
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    // Adjusted offset for sticky header
+                    if (window.scrollY >= (sectionTop - 150)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            // Intersection Observer for Scroll Animations
+            // Very performant way to trigger animations, fully supported in Safari 12.1+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        // Optional: stop observing once animated to keep it visible
+                        // observer.unobserve(entry.target); 
+                    }
+                });
+            }, observerOptions);
+
+            const animatedElements = document.querySelectorAll('.fade-in-up');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
