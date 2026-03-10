@@ -7,15 +7,15 @@
 
 @layer navigationBar {
   .navbar {
-    position: relative;
+    position: fixed;
     top: 0 ;
     left: 0 ;
     right: 0 ;
-    width: 100dvw ;
+    width: 101% ;
     height: 15dvh ;
     background-color: #262422 ;
     z-index: 1000 ;
-    display: flex ;
+    display: block ;
     align-items: center;
     font-family: "Proxima Nova";
   }
@@ -79,17 +79,14 @@
     height: 100% ;
     width: 100% ;
     margin: 0 ;
+    margin-top: 7% ;
     padding: 0 ;
   }
-
-  /*
   .parallax {
     height: 100dvh;
     background-size: cover;
     background-position: center;
   }
-  */
-
   .titre {
     text-align: left;
     color: #E3BA8A;
@@ -176,11 +173,9 @@
     overflow: hidden;
     display: flex;
   }
-  /*
   .section3 .parallax {
     width: 100% ;
   }
-    */
   .section3ContainerImage {
     height: 100% ;
     width: 100% ;
@@ -451,7 +446,6 @@
 @media (max-aspect-ratio: 1) {
 
 
-
   body {
     font-size: 150%;
   }
@@ -462,9 +456,6 @@
         letter-spacing: 0.2em;
       }
   
-      .navbar {
-    width: 100dvh ;
-  }
     
 
   @layer section1 {
@@ -783,17 +774,23 @@
     </head>
 
     <body> 
-      <div class="navbar" style="background-color: #262422;" role="banner">
-          <a class="navbar-brand" href="/" style="color: rgb(255, 255, 255);">
-            <img src="images/logo.png" alt="Letarte Avocat">
-          </a> 
-        <div class="navbar-table">
-          <div class="navbar-cell"><a href="#section1">À propos</a></div>
-          <div class="navbar-cell"><a href="#section2">Équipe</a></div>
-          <div class="navbar-cell"><a href="#section3">Nous joindre</a></div>
-        </div>
-     </div>
+        <div class="navbar" style="background-color: #262422;" role="banner">
 
+
+
+  <a class="navbar-brand" href="/" style="color: rgb(255, 255, 255);">
+    <img src="images/logo.png" alt="Letarte Avocat">
+  </a> 
+
+  <div class="navbar-table">
+    <div class="navbar-cell"><a href="#section1">À propos</a></div>
+    <div class="navbar-cell"><a href="#section2">Équipe</a></div>
+    <div class="navbar-cell"><a href="#section3">Nous joindre</a></div>
+  </div>
+
+
+
+</div>
         <!--Slogan-->
 <div class="section1">
   <div class="texte">
