@@ -12,7 +12,7 @@
 
     <script>
         // Redirection vers la version française si le navigateur n'est pas en anglais
-        if (!navigator.language.startsWith('en')) {
+        if (!sessionStorage.getItem('lang_chosen') && !navigator.language.startsWith('en')) {
             window.location.replace('index.html');
         }
     </script>
@@ -684,6 +684,7 @@
                 <li><a href="#equipe" class="nav-link">Our Team</a></li>
                 <li><a href="#nous-joindre" class="nav-link">Contact</a></li>
                 <li><a href="https://portail.letarteavocat.com/en/" target="_blank" class="nav-link" style="color: var(--color-accent-gold);">Client Portal</a></li>
+                <li><a href="index.html" onclick="sessionStorage.setItem('lang_chosen', 'fr');" class="nav-link">FR</a></li>
             </ul>
         </div>
     </nav>
