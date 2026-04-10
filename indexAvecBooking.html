@@ -171,18 +171,19 @@
 
         .nav-menu {
             display: flex;
-            gap: 2rem;
+            gap: 1.2rem;
             align-items: center;
         }
 
         .nav-menu li a {
             color: var(--color-white);
-            font-size: 1rem;
+            font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 1px;
             font-weight: 600;
             position: relative;
             padding: 5px 0;
+            white-space: nowrap;
         }
 
         .nav-menu li a::after {
@@ -670,7 +671,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="#" class="nav-brand" aria-label="Retour à l'accueil">
-                <img class = "logo" src="images/logo.png" alt="Letarte Avocat Logo">
+                <img class="logo" src="images/logo.png" alt="Letarte Avocat Logo">
             </a>
 
             <button class="hamburger" id="mobile-menu-btn" aria-label="Menu principal">
@@ -684,8 +685,12 @@
                 <li><a href="#services" class="nav-link">Services</a></li>
                 <li><a href="#equipe" class="nav-link">Équipe</a></li>
                 <li><a href="#nous-joindre" class="nav-link">Nous joindre</a></li>
-                <li><a href="https://portail.letarteavocat.com/fr/" target="_blank" class="nav-link" style="color: var(--color-accent-gold);">Espace Client</a></li>
-                <li><a href="index-en.html" onclick="sessionStorage.setItem('lang_chosen', 'en');" class="nav-link">EN</a></li>
+                <li><a href="https://outlook.office.com/book/Sancesdequestionssurlacompromission@letarteavocat.com/?ismsaljsauthenabled"
+                        target="_blank" class="nav-link" style="color: red;">Booking Equifax</a></li>
+                <li><a href="https://portail.letarteavocat.com/fr/" target="_blank" class="nav-link"
+                        style="color: var(--color-accent-gold);">Espace Client</a></li>
+                <li><a href="index-en.html" onclick="sessionStorage.setItem('lang_chosen', 'en');"
+                        class="nav-link">EN</a></li>
             </ul>
         </div>
     </nav>
