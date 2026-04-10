@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Letarte Avocat - Family Law in Trois-Rivières</title>
+    <title>Letarte Avocat - Droit familial à Trois-Rivières</title>
     <meta name="description"
-        content="LETARTE AVOCAT provides services exclusively related to family law in Trois-Rivières. Get the best defense.">
+        content="LETARTE AVOCAT offre des services exclusivement liés au droit familial à Trois-Rivières. Obtenez la meilleure défense.">
     <meta name="keywords"
-        content="Letarte Avocat, family law, divorce, separation, child support, Trois-Rivières, Mauricie, lawyer">
+        content="Letarte Avocat, droit familial, divorce, séparation, pension alimentaire, Trois-Rivières, Mauricie, avocat">
 
     <script>
-        // Redirection vers la version française si le navigateur n'est pas en anglais
-        if (!sessionStorage.getItem('lang_chosen') && !navigator.language.startsWith('en')) {
-            window.location.replace('index.html');
+        // Detection de la langue pour redirection automatique vers la version anglaise
+        if (!sessionStorage.getItem('lang_chosen') && navigator.language.startsWith('en')) {
+            window.location.replace('index-en.html');
         }
     </script>
 
@@ -669,24 +669,23 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
-            <a href="#" class="nav-brand" aria-label="Back to home">
-                <img class="logo" src="images/logo.png" alt="Letarte Avocat Logo">
+            <a href="#" class="nav-brand" aria-label="Retour à l'accueil">
+                <img class = "logo" src="images/logo.png" alt="Letarte Avocat Logo">
             </a>
 
-            <button class="hamburger" id="mobile-menu-btn" aria-label="Main menu">
+            <button class="hamburger" id="mobile-menu-btn" aria-label="Menu principal">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#a-propos" class="nav-link">About Us</a></li>
+                <li><a href="#a-propos" class="nav-link">À propos</a></li>
                 <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#equipe" class="nav-link">Our Team</a></li>
-                <li><a href="#nous-joindre" class="nav-link">Contact</a></li>
-                <li><a href="https://outlook.office.com/book/Sancesdequestionssurlacompromission@letarteavocat.com/?ismsaljsauthenabled" target="_blank" class="nav-link" style="color: var(--color-accent-gold);">Cybersecurity</a></li>
-                <li><a href="https://portail.letarteavocat.com/en/" target="_blank" class="nav-link" style="color: var(--color-accent-gold);">Client Portal</a></li>
-                <li><a href="index.html" onclick="sessionStorage.setItem('lang_chosen', 'fr');" class="nav-link">FR</a></li>
+                <li><a href="#equipe" class="nav-link">Équipe</a></li>
+                <li><a href="#nous-joindre" class="nav-link">Nous joindre</a></li>
+                <li><a href="https://portail.letarteavocat.com/fr/" target="_blank" class="nav-link" style="color: var(--color-accent-gold);">Espace Client</a></li>
+                <li><a href="index-en.html" onclick="sessionStorage.setItem('lang_chosen', 'en');" class="nav-link">EN</a></li>
             </ul>
         </div>
     </nav>
@@ -696,11 +695,11 @@
         <div class="container">
             <div class="hero-content fade-in-up">
                 <span class="hero-subtitle">Letarte Avocat</span>
-                <h1 class="hero-title">You deserve the best defense.</h1>
-                <a href="#a-propos" class="btn" aria-label="Learn more about our services">Discover</a>
+                <h1 class="hero-title">Vous méritez la meilleure défense.</h1>
+                <a href="#a-propos" class="btn" aria-label="En savoir plus sur nos services">Découvrir</a>
             </div>
         </div>
-        <a href="#a-propos" class="hero-scroll-indicator" aria-label="Scroll down">
+        <a href="#a-propos" class="hero-scroll-indicator" aria-label="Défiler vers le bas">
             <svg viewBox="0 0 24 24">
                 <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
             </svg>
@@ -711,16 +710,16 @@
     <section class="about" id="a-propos">
         <div class="container">
             <div class="about-content fade-in-up">
-                <h2 class="section-title">About Us</h2>
-                <p>Located in Trois-Rivières, <span class="about-highlight">LETARTE</span> <span
-                        class="about-gold">AVOCAT</span> provides services exclusively related to family law.
-                    With solid experience in litigation and advocacy, each case is approached with a
-                    personalized and winning strategy.</p>
-                <p>Since 2006, our mission and commitment are clear: to offer you rigor and efficiency throughout
-                    the progress of your case. With over a thousand clients represented to date across the province,
-                    we are the benchmark in the Mauricie region.</p>
-                <p>We can help you navigate the judicial process. Daily, we strive for excellence for
-                    all our clients.</p>
+                <h2 class="section-title">À Propos</h2>
+                <p>Situé à Trois-Rivières, <span class="about-highlight">LETARTE</span> <span
+                        class="about-gold">AVOCAT</span> offre des services exclusivement liés au droit familial.
+                    Détenant une solide expérience en litige et plaidoirie, chaque dossier est abordé avec une approche
+                    personnalisée et gagnante.</p>
+                <p>Depuis 2006, notre mission et notre engagement sont clairs : vous offrir rigueur et efficacité tout
+                    au long du cheminement de votre cause. Avec plus d'un millier de clients représentés à ce jour à
+                    travers la province, nous sommes la référence en Mauricie.</p>
+                <p>Nous pouvons vous aider à faire face au processus judiciaire. Quotidiennement, nous visons
+                    l'excellence pour tous nos clients.</p>
             </div>
         </div>
     </section>
@@ -728,70 +727,70 @@
     <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
-            <h2 class="section-title fade-in-up">Our Services</h2>
+            <h2 class="section-title fade-in-up">Nos Services</h2>
             <div class="services-intro fade-in-up">
-                <p><strong>Family Law:</strong> Representation in Superior Court during separation and divorce.
-                    Obtaining a judgment following a trial, negotiation, or amicable settlement
-                    concerning:</p>
+                <p><strong>Droit Familial:</strong> Représentation à la Cour supérieure lors de séparation et divorce.
+                    Obtention d'un jugement à la suite d'un procès, d'une négociation ou d'un règlement à l'amiable
+                    concernant :</p>
             </div>
 
             <div class="services-grid">
                 <!-- Garde -->
                 <div class="service-card fade-in-up">
-                    <h3>Child Custody</h3>
-                    <p>Child custody and parenting time sharing.</p>
+                    <h3>Garde d'enfant</h3>
+                    <p>La garde d'enfant et le partage du temps parental.</p>
                     <ul class="service-list">
-                        <li>Majority custody to one parent</li>
-                        <li>Shared custody</li>
+                        <li>Garde majoritaire à un parent</li>
+                        <li>Garde partagée</li>
                     </ul>
                 </div>
 
                 <!-- Pension -->
                 <div class="service-card fade-in-up">
-                    <h3>Alimony and Child Support</h3>
-                    <p>The right to support for children and spouses.</p>
+                    <h3>Pension alimentaire</h3>
+                    <p>Le droit à une pension alimentaire pour les enfants et époux.</p>
                     <ul class="service-list">
-                        <li>Obtaining a judgment for fixation and collection</li>
-                        <li>Revision of a judgment</li>
-                        <li>Imputation of income in cases of bad faith</li>
+                        <li>Obtention d'un jugement pour fixation et perception</li>
+                        <li>Révision d'un jugement</li>
+                        <li>Fixation d'un revenu lors de mauvaise foi</li>
                     </ul>
                 </div>
 
                 <!-- Partage Actifs -->
                 <div class="service-card fade-in-up">
-                    <h3>Asset Partition</h3>
-                    <p>Termination of co-ownership and financial claims arising from a separation.</p>
+                    <h3>Partage des actifs</h3>
+                    <p>Fin de la copropriété et réclamations financières découlant d'une rupture.</p>
                     <ul class="service-list">
-                        <li>Partition under family patrimony / matrimonial regime</li>
-                        <li>Recourse for unjust enrichment (common-law spouses)</li>
+                        <li>Partage en vertu du patrimoine familial / régime matrimonial</li>
+                        <li>Recours en enrichissement injustifié (conjoints de fait)</li>
                     </ul>
                 </div>
 
-                <!-- Parental Authority -->
+                <!-- Autorité parentale -->
                 <div class="service-card fade-in-up">
-                    <h3>Parental Authority</h3>
-                    <p>The exercise of parental authority (making necessary decisions).</p>
+                    <h3>Autorité parentale</h3>
+                    <p>L'exercice de l'autorité parentale (prendre les décisions nécessaires).</p>
                     <ul class="service-list">
-                        <li>Deprivation of an attribute of authority</li>
-                        <li>Forfeiture of authority in serious circumstances</li>
+                        <li>Retrait d'un attribut de l'autorité</li>
+                        <li>Déchéance de l'autorité lors de motifs graves</li>
                     </ul>
                 </div>
 
                 <!-- Autres -->
                 <div class="service-card fade-in-up">
-                    <h3>Other Recourses</h3>
+                    <h3>Autres recours</h3>
                     <ul class="service-list">
-                        <li>Claim or contestation of filiation</li>
-                        <li>Recourses for name change</li>
+                        <li>La réclamation ou contestation de filiation</li>
+                        <li>Les recours en changement de nom</li>
                     </ul>
                 </div>
             </div>
 
             <div class="services-intro fade-in-up" style="margin-top: 50px;">
-                <p>With us, all aspects of the custody of each child, the protection of your assets, and the
-                    protection of your rights are secured.</p>
-                <p style="font-size: 0.9em; margin-top: 15px; font-style: italic;">* Please note that we do not accept
-                    legal aid mandates and we prioritize cases in Trois-Rivières and
+                <p>Avec nous, tous les aspects de la garde de chaque enfant, de la protection de vos biens et de la
+                    protection de vos droits sont assurés.</p>
+                <p style="font-size: 0.9em; margin-top: 15px; font-style: italic;">* Prendre note que nous n'acceptons
+                    pas les mandats d'aide-juridique et que nous prenons en priorité les dossiers à Trois-Rivières et
                     Shawinigan.</p>
             </div>
         </div>
@@ -800,7 +799,7 @@
     <!-- Team Section -->
     <section class="team" id="equipe">
         <div class="container">
-            <h2 class="section-title fade-in-up">Our Team</h2>
+            <h2 class="section-title fade-in-up">Équipe</h2>
 
             <div class="team-grid">
                 <!-- Mathilde (Left) -->
@@ -810,11 +809,11 @@
                     </div>
                     <div class="team-info">
                         <h3 class="team-name">Mathilde Milot-Beauchesne</h3>
-                        <span class="team-role">Lawyer</span>
-                        <p class="team-desc">A member of the Barreau du Québec since 2025, Me Milot‑Beauchesne has been working at
-                            Letarte Avocat since 2022. Dedicated and with high integrity, she quickly made her mark in a
-                            highly competitive environment. She works with Me Letarte and is responsible for handling
-                            urgent matters.
+                        <span class="team-role">Avocate</span>
+                        <p class="team-desc">Membre du Barreau du Québec depuis 2025, Me Milot‑Beauchesne travaille chez
+                            Letarte Avocat depuis 2022. Dévouée et intègre, elle a su rapidement faire sa place dans un
+                            milieu très compétitif. Elle travaille avec Me Letarte et a la responsabilité de prendre
+                            charge des urgences.
                         </p>
                     </div>
                 </div>
@@ -826,10 +825,10 @@
                     </div>
                     <div class="team-info">
                         <h3 class="team-name">Marc-André Letarte</h3>
-                        <span class="team-role">Lawyer</span>
-                        <p class="team-desc">A member of the Barreau du Québec since 2006, Me Letarte regularly pleads in
-                            the Superior Court and the Court of Québec. He ensures that each client understands the issues and
-                            implications of their legal situation to maximize their outcomes.</p>
+                        <span class="team-role">Avocat</span>
+                        <p class="team-desc">Membre du barreau du Québec depuis 2006, Me Letarte plaide régulièrement à
+                            la Cour supérieure et Cour du Québec. Il s'assure que chaque client comprenne les enjeux et
+                            implications de sa situation juridique afin de maximiser leurs gains. <br><br><br><br></p>
                     </div>
                 </div>
 
@@ -840,11 +839,11 @@
                     </div>
                     <div class="team-info">
                         <h3 class="team-name">Suzie Leahey</h3>
-                        <span class="team-role">Legal Assistant</span>
-                        <p class="team-desc">With over 15 years of experience in the legal field, Ms. Leahey
-                            has solid knowledge in family and civil matters. Mastering the subtleties of
-                            legal procedures, her support and dedication to the success of your case are
-                            unquestionable.</p>
+                        <span class="team-role">Adjointe Juridique</span>
+                        <p class="team-desc">Avec plus de 15 ans d'expérience dans le domaine juridique, Mme Leahey
+                            détient une solide connaissance en matière familiale et civile. Maîtrisant les subtilités de
+                            la procédure juridique, son soutien et son dévouement à la réussite de votre cause ne
+                            laissera aucun doute.<br><br><br></p>
                     </div>
                 </div>
             </div>
@@ -855,7 +854,7 @@
     <section class="contact-footer" id="nous-joindre">
         <div class="contact">
             <div class="container">
-                <h2 class="section-title fade-in-up">Contact Us</h2>
+                <h2 class="section-title fade-in-up">Nous Joindre</h2>
 
                 <div class="contact-grid">
                     <div class="contact-item fade-in-up">
@@ -866,8 +865,8 @@
                             </svg>
                         </div>
                         <h3>Contact</h3>
-                        <p>Email: <a href="mailto:ma@letarteavocat.com">ma@letarteavocat.com</a></p>
-                        <p>Phone: <a href="tel:819-992-2407">(819) 992-2407</a></p>
+                        <p>Courriel : <a href="mailto:ma@letarteavocat.com">ma@letarteavocat.com</a></p>
+                        <p>Téléphone : <a href="tel:819-992-2407">(819) 992-2407</a></p>
                     </div>
 
                     <div class="contact-item fade-in-up" style="transition-delay: 0.1s;">
@@ -877,7 +876,7 @@
                                     d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                             </svg>
                         </div>
-                        <h3>Address</h3>
+                        <h3>Adresse</h3>
                         <p>LETARTE AVOCAT<br>
                             1350, rue Royale, bureau 900<br>
                             Trois-Rivières (Québec), G9A 4J4</p>
@@ -890,16 +889,16 @@
                                     d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
                             </svg>
                         </div>
-                        <h3>Business Hours</h3>
-                        <p>Monday - Thursday: 8:00 AM to 4:00 PM<br>
-                            Friday: 8:00 AM to 12:00 PM<br></p>
+                        <h3>Heures d'ouverture</h3>
+                        <p>Lundi - Jeudi : 8:00 à 16:00<br>
+                            Vendredi : 8:00 à 12:00<br></p>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; <span id="current-year"></span> Letarte Avocat. All rights reserved.</p>
+            <p>&copy; <span id="current-year"></span> Letarte Avocat. Tous droits réservés.</p>
         </div>
     </section>
 
